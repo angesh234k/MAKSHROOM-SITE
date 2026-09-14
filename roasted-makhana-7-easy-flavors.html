@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="en">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Roasted Makhana: 7 Easy Flavors to Try | Makshroom</title>
+    <meta name="description" content="Discover 7 easy roasted makhana flavors, from classic salt and pepper to peri-peri, masala, garlic herb, pudina chaat, smoky chilli and cinnamon jaggery.">
+    <style>
+        :root {
+            --green: #174d33;
+            --leaf: #5e9858;
+            --ink: #182019;
+            --muted: #687169;
+            --cream: #faf9f4;
+            --soft: #f5f7f1;
+            --line: #e4e8df;
+            --peach: #fff7ef
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+
+        body {
+            margin: 0;
+            color: var(--ink);
+            font: 16px/1.62 Arial, Helvetica, sans-serif;
+            background: #fff
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit
+        }
+
+        .wrap {
+            width: 100%;
+            padding: 0 clamp(28px, 6vw, 110px)
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: Georgia, "Times New Roman", serif
+        }
+
+        .hero {
+            background: linear-gradient(90deg, #fff 0 48%, #f8f6ef 48%)
+        }
+
+        .top {
+            height: 76px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 14px
+        }
+
+        .crumb {
+            color: var(--muted)
+        }
+
+        .crumb b {
+            color: var(--green)
+        }
+
+        .back {
+            font-weight: 700
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.12fr;
+            min-height: 570px
+        }
+
+        .hero-copy {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 40px 58px 55px 0
+        }
+
+        .tag {
+            width: max-content;
+            padding: 6px 13px;
+            border-radius: 20px;
+            background: #e7f2e4;
+            color: #4f8d4d;
+            font-size: 12px;
+            font-weight: 700
+        }
+
+        h1 {
+            font-size: clamp(48px, 4.2vw, 68px);
+            line-height: 1.05;
+            letter-spacing: -1.8px;
+            color: var(--green);
+            margin: 28px 0 22px
+        }
+
+        .lead {
+            font-size: 20px;
+            max-width: 610px;
+            margin: 0 0 34px
+        }
+
+        .byline {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 14px;
+            font-weight: 700
+        }
+
+        .avatar {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: #e8b16d;
+            display: grid;
+            place-items: center;
+            color: #fff;
+            font-size: 20px
+        }
+
+        .hero-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            min-height: 570px
+        }
+
+        .article {
+            max-width: 1440px;
+            margin: auto
+        }
+
+        .intro {
+            max-width: 980px;
+            padding: 50px 0 35px
+        }
+
+        .intro p {
+            font-size: 17px;
+            margin: 0 0 14px
+        }
+
+        .guide {
+            display: grid;
+            grid-template-columns: 1fr .8fr;
+            gap: 50px;
+            align-items: center;
+            padding: 35px 0 48px;
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line)
+        }
+
+        .guide h2,
+        .section-title {
+            color: var(--green);
+            font-size: 36px;
+            line-height: 1.2;
+            margin: 0 0 18px
+        }
+
+        .guide p {
+            margin: 0 0 13px
+        }
+
+        .rule {
+            background: #f3f7ef;
+            border-left: 4px solid var(--leaf);
+            border-radius: 0 14px 14px 0;
+            padding: 25px 28px;
+            font-family: Georgia, serif;
+            font-size: 22px;
+            color: var(--green)
+        }
+
+        .flavors {
+            padding: 48px 0
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 34px
+        }
+
+        .flavor {
+            display: grid;
+            grid-template-columns: 1fr 1.08fr;
+            gap: 46px;
+            align-items: center;
+            padding: 30px 0;
+            border-bottom: 1px solid var(--line)
+        }
+
+        .flavor.reverse .flavor-copy {
+            order: 2
+        }
+
+        .flavor.reverse .flavor-img {
+            order: 1
+        }
+
+        .flavor-img {
+            width: 100%;
+            height: 335px;
+            object-fit: cover;
+            border-radius: 16px
+        }
+
+        .num {
+            display: inline-grid;
+            place-items: center;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: #edf4e8;
+            color: var(--green);
+            font-weight: 700;
+            margin-bottom: 12px
+        }
+
+        .flavor h3 {
+            color: var(--green);
+            font-size: 30px;
+            line-height: 1.2;
+            margin: 0 0 14px
+        }
+
+        .flavor p {
+            margin: 0 0 12px
+        }
+
+        .detail {
+            margin-top: 15px;
+            background: #f7f8f4;
+            border-radius: 10px;
+            padding: 12px 15px;
+            font-size: 14px
+        }
+
+        .detail strong {
+            color: var(--green)
+        }
+
+        .choice {
+            padding: 50px 0;
+            display: grid;
+            grid-template-columns: 1fr .75fr;
+            gap: 45px;
+            align-items: start
+        }
+
+        .choice h2,
+        .storage h2,
+        .bottom h2 {
+            color: var(--green);
+            font-size: 34px;
+            margin: 0 0 15px
+        }
+
+        .choice p {
+            margin: 0 0 13px
+        }
+
+        .mood {
+            background: #f4f7ef;
+            border: 1px solid #e0e8da;
+            border-radius: 15px;
+            padding: 25px
+        }
+
+        .mood h3 {
+            font-size: 23px;
+            color: var(--green);
+            margin: 0 0 12px
+        }
+
+        .mood div {
+            padding: 8px 0;
+            border-bottom: 1px solid #dde5d8
+        }
+
+        .mood div:last-child {
+            border: 0
+        }
+
+        .storage {
+            background: var(--peach);
+            border: 1px solid #efd8c3;
+            border-radius: 15px;
+            padding: 28px 32px;
+            margin-bottom: 28px
+        }
+
+        .storage h2 {
+            font-size: 28px
+        }
+
+        .storage p {
+            margin: 0 0 10px
+        }
+
+        .bottom {
+            display: grid;
+            grid-template-columns: 74px 1fr;
+            gap: 24px;
+            align-items: start;
+            background: #f9fbf5;
+            border: 1px solid #dce5d6;
+            border-radius: 15px;
+            padding: 30px 32px;
+            margin-bottom: 42px
+        }
+
+        .bottom-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: #5f9e57;
+            color: white;
+            display: grid;
+            place-items: center;
+            font-size: 32px
+        }
+
+        .bottom h2 {
+            font-size: 28px
+        }
+
+        .bottom p {
+            margin: 0 0 11px
+        }
+
+        .final-line {
+            font-weight: 700;
+            color: var(--green)
+        }
+
+        .breadcrumb {
+            padding: 20px 0 10px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .breadcrumb a {
+            color: #176b4a;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .breadcrumb span {
+            margin: 0 4px;
+        }
+
+        @media(max-width:900px) {
+            .hero {
+                background: #fff
+            }
+
+            .hero-grid,
+            .guide,
+            .flavor,
+            .choice {
+                grid-template-columns: 1fr
+            }
+
+            .hero-copy {
+                padding: 34px 0
+            }
+
+            .hero-img {
+                min-height: 360px
+            }
+
+            .flavor.reverse .flavor-copy,
+            .flavor.reverse .flavor-img {
+                order: initial
+            }
+
+            .flavor-img {
+                height: 300px
+            }
+        }
+
+        @media(max-width:620px) {
+            .wrap {
+                padding: 0 18px
+            }
+
+            .back {
+                display: none
+            }
+
+            .top {
+                height: 62px;
+                font-size: 12px
+            }
+
+            h1 {
+                font-size: 40px
+            }
+
+            .lead {
+                font-size: 17px
+            }
+
+            .hero-img {
+                min-height: 270px
+            }
+
+            .guide h2,
+            .section-title,
+            .choice h2 {
+                font-size: 29px
+            }
+
+            .flavor {
+                gap: 22px;
+                padding: 25px 0
+            }
+
+            .flavor h3 {
+                font-size: 26px
+            }
+
+            .flavor-img {
+                height: 230px
+            }
+
+            .bottom {
+                grid-template-columns: 1fr
+            }
+
+            .bottom-icon {
+                width: 58px;
+                height: 58px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="hero">
+        <div class="wrap">
+            <nav class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>></span>
+                <a href="index.html#blog">Blog</a>
+                <span>></span>
+                <span>Roasted Makhana: 7 Easy Flavors to Try</span>
+            </nav>
+            <div class="hero-grid">
+                <div class="hero-copy"><span class="tag">◉ &nbsp; HEALTHY SNACKS</span>
+                    <h1>Roasted Makhana:<br>7 Easy Flavors to Try</h1>
+                    <p class="lead">Plain roasted makhana is light and crunchy, but it doesn’t have to be boring. From
+                        spicy peri-peri to sweet cinnamon, these seven simple flavour ideas can turn one basic snack
+                        into something different every day.</p>
+                    <div class="byline"><span class="avatar">✦</span><span>By Makshroom
+                            Team</span><span>•</span><span>June 15, 2025</span></div>
+                </div>
+                <img class="hero-img" src="images/roasted-makhana-7-flavors-hero.webp"
+                    alt="Seven flavours of roasted makhana">
+            </div>
+        </div>
+    </header>
+
+    <main class="wrap article">
+        <section class="intro">
+            <p>There is something satisfying about freshly roasted makhana—the light crunch, the warm toasted flavour,
+                and the fact that it takes only a few minutes to prepare.</p>
+            <p>But plain salt-and-pepper makhana every day? That can get repetitive quickly.</p>
+            <p>The good thing about makhana is that its mild flavour makes it a useful base for different seasonings.
+                Whether you prefer something spicy, tangy, herby, or slightly sweet, a simple change in seasoning can
+                completely change the snack.</p>
+            <p><strong>Here are seven easy flavours worth trying.</strong></p>
+        </section>
+
+        <section class="guide">
+            <div>
+                <h2>Before You Start: Get the Crunch Right</h2>
+                <p>Whatever flavour you choose, start with properly roasted makhana.</p>
+                <p>Heat a wide pan over low to medium-low heat. Add the makhana and roast slowly, stirring frequently,
+                    until crisp. Depending on the quantity and heat, this can take several minutes.</p>
+                <p>To check whether it is ready, take one piece, allow it to cool briefly, and bite into it. It should
+                    feel crisp rather than chewy.</p>
+                <p>Once the makhana is roasted, use a small amount of oil or ghee if needed to help dry seasonings coat
+                    the surface.</p>
+            </div>
+            <div class="rule">The simple rule: roast first, season carefully, and let the makhana cool before storing
+                it.</div>
+        </section>
+
+        <section class="flavors">
+            <h2 class="section-title">7 Easy Makhana Flavours :</h2>
+
+            <article class="flavor">
+                <div class="flavor-copy"><span class="num">1</span>
+                    <h3>Classic Salt &amp; Black Pepper</h3>
+                    <p>Sometimes the simplest flavour is the one you return to most often.</p>
+                    <p>A little salt and freshly ground black pepper give roasted makhana a clean, savoury flavour
+                        without overpowering its natural toasted taste.</p>
+                    <div class="detail"><strong>You’ll need:</strong> salt, black pepper, and a small amount of oil or
+                        ghee.This is a good everyday option when you want something simple with tea or coffee.</div>
+                </div><img class="flavor-img" src="images/salt-pepper-makhana.webp" alt="Salt and black pepper makhana">
+            </article>
+
+            <article class="flavor reverse">
+                <div class="flavor-copy"><span class="num">2</span>
+                    <h3>Peri-Peri Makhana 🌶️</h3>
+                    <p>If you enjoy bold, spicy snacks, peri-peri makhana is an easy place to start.</p>
+                    <p>After roasting, toss the warm makhana with a light coating of oil and your preferred peri-peri
+                        seasoning. Start with a small amount, mix well, taste, and then add more if needed.</p>
+                    <p>The result is spicy, tangy, and much more exciting than plain roasted makhana.</p>
+                    <div class="detail"><strong>Best for:</strong> movie nights and evening snack cravings.</div>
+                </div><img class="flavor-img" src="images/peri-peri-makhana.webp" alt="Peri-peri makhana">
+            </article>
+
+            <article class="flavor">
+                <div class="flavor-copy"><span class="num">3</span>
+                    <h3>Masala Makhana 🇮🇳</h3>
+                    <p>This version brings familiar Indian snack flavours to a bowl of roasted makhana.</p>
+                    <p>Try a combination of roasted cumin powder, a little chilli powder, black salt, and a small amount
+                        of chaat masala.</p>
+                    <p>The key is balance. Too much powdered seasoning can make the flavour harsh and leave excess spice
+                        at the bottom of the bowl.</p>
+                    <div class="detail"><strong>Best for:</strong> chai time.</div>
+                </div><img class="flavor-img" src="images/masala-makhana.webp" alt="Masala makhana">
+            </article>
+
+            <article class="flavor reverse">
+                <div class="flavor-copy"><span class="num">4</span>
+                    <h3>Garlic &amp; Herb Makhana 🌿</h3>
+                    <p>Not every makhana flavour needs to be spicy.</p>
+                    <p>Garlic and herbs create a more subtle savoury snack. Use garlic powder rather than fresh garlic
+                        if you plan to store the makhana, and combine it with dried herbs such as oregano or mixed
+                        Italian seasoning.</p>
+                    <p>This version works particularly well when you want something different from traditional masala
+                        flavours.</p>
+                    <div class="detail"><strong>Flavour profile:</strong> savoury, aromatic, and mild.</div>
+                </div><img class="flavor-img" src="images/garlic-herb-makhana.webp" alt="Garlic and herb makhana">
+            </article>
+
+            <article class="flavor">
+                <div class="flavor-copy"><span class="num">5</span>
+                    <h3>Pudina Chaat Makhana 🍃</h3>
+                    <p>Mint and chaat masala make a refreshing, tangy combination.</p>
+                    <p>Use a dry mint or pudina seasoning along with a small amount of chaat masala and roasted cumin
+                        powder. Toss it with freshly roasted makhana while the surface is still lightly coated.</p>
+                    <p>The flavour is fresh, chatpata, and distinctly Indian.</p>
+                    <div class="detail"><strong>Best for:</strong> anyone who loves the flavour of pudina chutney and
+                        chaat.</div>
+                </div><img class="flavor-img" src="images/pudina-chaat-makhana.webp" alt="Pudina chaat makhana">
+            </article>
+
+            <article class="flavor reverse">
+                <div class="flavor-copy"><span class="num">6</span>
+                    <h3>Smoky Chilli Makhana 🔥</h3>
+                    <p>This one is for people who like a deeper, warmer kind of spice.</p>
+                    <p>Combine mild chilli powder or paprika with garlic powder, a little roasted cumin, and salt. The
+                        aim is to create a smoky savoury flavour rather than simply making the snack extremely hot.</p>
+                    <p>A small pinch of spice goes a long way, so add gradually and taste as you mix.</p>
+                    <div class="detail"><strong>Flavour profile:</strong> smoky, warm, and savoury.</div>
+                </div><img class="flavor-img" src="images/smoky-chilli-makhana.webp" alt="Smoky chilli makhana">
+            </article>
+
+            <article class="flavor">
+                <div class="flavor-copy"><span class="num">7</span>
+                    <h3>Cinnamon Jaggery Makhana ✨</h3>
+                    <p>Makhana doesn't always have to be savoury.</p>
+                    <p>For a lightly sweet version, a small amount of jaggery and cinnamon can create a warm
+                        dessert-inspired flavour. Melt the jaggery carefully with a little water or ghee, coat the
+                        roasted makhana lightly, and allow it to cool completely.</p>
+                    <p>Because this version contains added sugar, it is better viewed as an occasional sweet snack
+                        rather than automatically treating it as equivalent to plain roasted makhana.</p>
+                    <div class="detail"><strong>Best for:</strong> when you want something sweet and crunchy.</div>
+                </div><img class="flavor-img" src="images/cinnamon-jaggery-makhana.webp" alt="Cinnamon jaggery makhana">
+            </article>
+        </section>
+
+        <section class="choice">
+            <div>
+                <h2>Which Flavour Should You Try First?</h2>
+                <p>That depends entirely on your mood.</p>
+                <p>If you want something simple, start with salt and black pepper. For spice lovers, peri-peri or smoky
+                    chilli are the obvious choices. If you enjoy Indian street-food flavours, try masala or pudina
+                    chaat.</p>
+                <p>And when the sweet craving arrives, cinnamon jaggery offers a completely different way to enjoy
+                    makhana.</p>
+                <p>You can also divide one freshly roasted batch into smaller bowls and season each one differently. It
+                    is an easy way to discover which flavour you actually enjoy most.</p>
+            </div>
+            <aside class="mood">
+                <h3>Pick by mood</h3>
+                <div>Simple → Salt &amp; Black Pepper</div>
+                <div>Spicy → Peri-Peri or Smoky Chilli</div>
+                <div>Chatpata → Masala or Pudina Chaat</div>
+                <div>Sweet → Cinnamon Jaggery</div>
+            </aside>
+        </section>
+
+        <section class="storage">
+            <h2>A Small Storage Tip</h2>
+            <p>Let roasted makhana cool completely before putting it into an airtight container.</p>
+            <p>Storing it while it is still warm can trap moisture inside the container and affect the crisp texture.
+                Also, flavours containing wet ingredients or fresh herbs are better eaten sooner rather than stored like
+                dry-seasoned versions.</p>
+        </section>
+
+        <section class="bottom">
+            <div class="bottom-icon">✦</div>
+            <div>
+                <h2>The Bottom Line</h2>
+                <p>Roasted makhana is one of those snacks where a small change in seasoning can make a big difference.
+                </p>
+                <p>You don't need complicated recipes or a long ingredient list. Start with properly roasted, crispy
+                    makhana, add seasoning gradually, and experiment with the flavours you already enjoy.</p>
+                <p class="final-line">One bowl of plain makhana can become spicy, tangy, herby, smoky, or sweet. The
+                    difficult part might simply be choosing which flavour to make first.</p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

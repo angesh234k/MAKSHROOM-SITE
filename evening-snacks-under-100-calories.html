@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Evening Snacks Under 100 Calories (Healthy Options)</title>
+    <meta name="description" content="Discover healthy evening snacks under 100 calories, including roasted makhana, fruit, Greek yogurt, vegetables, popcorn and other light snack ideas.">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --green: #176b4a;
+            --green-dark: #0e4d35;
+            --green-soft: #edf7f1;
+            --ink: #202823;
+            --muted: #68736d;
+            --page: #f4f8f5;
+            --paper: #fff;
+            --line: #e1e9e4
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+
+        body {
+            margin: 0;
+            background: var(--page);
+            color: var(--ink);
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        .reading-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: var(--green);
+            width: 0;
+            z-index: 100
+        }
+
+        .article-shell {
+            max-width: 940px;
+            margin: 0 auto;
+            padding: 28px 20px 60px
+        }
+
+        .article-hero,
+        .article-content {
+            background: var(--paper);
+            border: 1px solid var(--line);
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(22, 55, 40, .06)
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 390px;
+            object-fit: cover;
+            display: block
+        }
+
+        .hero-copy {
+            padding: 28px 44px 32px;
+            text-align: center
+        }
+
+        .category {
+            display: inline-block;
+            padding: 6px 11px;
+            border-radius: 999px;
+            background: var(--green-soft);
+            color: var(--green-dark);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: .08em
+        }
+
+        h1 {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 43px;
+            line-height: 1.12;
+            margin: 14px auto 12px;
+            max-width: 760px
+        }
+
+        .subtitle {
+            font-size: 18px;
+            line-height: 1.5;
+            color: var(--muted);
+            margin: 0
+        }
+
+        .meta {
+            font-size: 13px;
+            color: var(--muted);
+            margin-top: 14px
+        }
+
+        .article-content {
+            margin-top: 24px;
+            padding: 44px 58px
+        }
+
+        .article-content h2 {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 29px;
+            line-height: 1.25;
+            margin: 40px 0 16px
+        }
+
+        .article-content h2:first-child {
+            margin-top: 0
+        }
+
+        .article-content h3 {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 21px;
+            line-height: 1.3;
+            margin: 24px 0 8px
+        }
+
+        .article-content p {
+            font-size: 16px;
+            line-height: 1.72;
+            margin: 0 0 16px
+        }
+
+        .bullet {
+            padding-left: 18px;
+            margin-bottom: 6px !important
+        }
+
+        .calorie {
+            display: inline-block;
+            background: var(--green-soft);
+            color: var(--green-dark);
+            font-size: 13px;
+            font-weight: 700;
+            padding: 6px 10px;
+            border-radius: 999px;
+            margin: 0 0 12px
+        }
+
+        .article-figure {
+            margin: 24px auto 30px;
+            text-align: center
+        }
+
+        .article-figure img {
+            display: block;
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+            object-fit: contain;
+            border-radius: 14px;
+            margin: 0 auto
+        }
+
+        .breadcrumb {
+            max-width: 760px;
+            margin: 0 auto 18px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .breadcrumb a {
+            color: #176b4a;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .breadcrumb span {
+            margin: 0 6px;
+        }
+
+        @media(max-width:700px) {
+            .article-shell {
+                padding: 10px 10px 36px
+            }
+
+            .hero-image {
+                height: 260px
+            }
+
+            .hero-copy {
+                padding: 22px 20px 25px
+            }
+
+            h1 {
+                font-size: 34px
+            }
+
+            .subtitle {
+                font-size: 16px
+            }
+
+            .article-content {
+                padding: 28px 20px
+            }
+
+            .article-content h2 {
+                font-size: 26px
+            }
+
+            .article-content h3 {
+                font-size: 20px
+            }
+
+            .article-figure img {
+                max-width: 100%
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reading-progress"></div>
+
+    <main class="article-shell">
+
+        <nav class="breadcrumb">
+            <a href="index.html">← Home</a>
+        </nav>
+        <header class="article-hero">
+            <img class="hero-image" src="images/evening-snacks-main.webp"
+                alt="Healthy evening snacks under 100 calories">
+            <div class="hero-copy"><span class="category">WELLNESS</span>
+                <h1>Evening Snacks Under 100 Calories (Healthy Options)</h1>
+                <p class="subtitle">Healthy, Tasty &amp; Guilt-Free Snacks to Beat Evening Hunger</p>
+                <div class="meta">Makshroom • 6 min read</div>
+            </div>
+        </header>
+        <article class="article-content">
+            <h2>Introduction</h2>
+            <p>It&#x27;s 5:30 PM. You&#x27;ve just finished work or college, and suddenly your stomach starts rumbling.
+                Sound familiar?</p>
+            <p>For many of us, the evening is when cravings hit the hardest. A packet of chips, biscuits, or sugary
+                snacks may seem tempting, but these choices can quickly add extra calories without keeping you full for
+                long.</p>
+            <p>The good news? Healthy evening snacking doesn&#x27;t have to be boring.</p>
+            <p>By choosing nutrient-rich snacks , you can satisfy your hunger, enjoy delicious
+                flavors, and stay on track with your health goals. Whether you&#x27;re trying to manage your weight, eat
+                more mindfully, or simply make smarter food choices, these snack ideas are  easy to prepare and perfect
+                for busy lifestyles.</p>
+            <p>Let&#x27;s explore some healthy evening snacks that are both satisfying and light.</p>
+            <h2>Why Evening Snacking Matters</h2>
+            <p>Many people think snacking is unhealthy, but that&#x27;s not always true.</p>
+            <p>A well-planned snack can:</p>
+            <p>Prevent overeating at dinner</p>
+            <p>Keep energy levels stable</p>
+            <p>Reduce unhealthy cravings</p>
+            <p>Help you stay focused during work or study</p>
+            <p>Add important nutrients to your daily diet</p>
+            <p>The key isn&#x27;t avoiding snacks—it&#x27;s choosing better ones.</p>
+            <figure class="article-figure"><img src="images/healthy-evening-snacks.webp"
+                    alt="Different healthy evening snacks arranged neatly on a wooden table"></figure>
+            <h3>1. Roasted Makhana</h3>
+            <div class="calorie">Approximate Calories: 80–90 calories (small serving)</div>
+            <p>Roasted makhana is light, crunchy, and one of the easiest healthy snacks to prepare.</p>
+            <p>Season it with:</p>
+            <p>Black pepper</p>
+            <p>Peri Peri</p>
+            <p>Garlic herbs</p>
+            <p>Turmeric</p>
+            <p>Chaat masala</p>
+            <p>It pairs perfectly with evening tea or coffee.</p>
+            <h3>2. Apple Slices</h3>
+            <div class="calorie">Approximate Calories: 80–95 calories</div>
+            <p>An apple is naturally sweet, refreshing, and easy to carry anywhere.</p>
+            <p>For extra flavor, sprinkle:</p>
+            <p>Cinnamon</p>
+            <p>Black pepper</p>
+            <p>Lemon juice</p>
+            <h3>3. Air-Popped Popcorn</h3>
+            <div class="calorie">Approximate Calories: 90 calories (3 cups)</div>
+            <p>Plain air-popped popcorn is surprisingly filling because of its volume and fiber.</p>
+            <p>Avoid excessive butter or caramel coatings if you&#x27;re trying to keep calories low.</p>
+            <h3>4. Greek Yogurt</h3>
+            <div class="calorie">Approximate Calories: 90–100 calories</div>
+            <p>Plain Greek yogurt provides protein and pairs well with:</p>
+            <p>Fresh berries</p>
+            <p>Chopped fruits</p>
+            <p>Cinnamon</p>
+            <p>Choose unsweetened varieties whenever possible.</p>
+            <h3>5. Cucumber &amp; Carrot Sticks</h3>
+            <div class="calorie">Approximate Calories: 40–60 calories</div>
+            <p>Fresh vegetables are naturally low in calories while adding crunch and hydration.</p>
+            <p>Pair them with a small amount of hummus or yogurt dip for extra flavor.</p>
+            <h3>6. Fresh Fruit Bowl</h3>
+            <div class="calorie">Approximate Calories: 80–100 calories</div>
+            <p>Mix seasonal fruits like:</p>
+            <p>Papaya</p>
+            <p>Watermelon</p>
+            <p>Orange</p>
+            <p>Kiwi</p>
+            <p>Strawberries</p>
+            <p>A colorful fruit bowl is naturally refreshing and satisfying.</p>
+            <h3>7. Boiled Edamame</h3>
+            <div class="calorie">Approximate Calories: About 95 calories (small serving)</div>
+            <p>Edamame provides plant protein and fiber, making it a filling snack option.</p>
+            <p>Season lightly with sea salt or black pepper.</p>
+            <h3>8. Homemade Mushroom Soup</h3>
+            <div class="calorie">Approximate Calories: 70–90 calories (1 cup)</div>
+            <p>A warm bowl of mushroom soup is comforting, especially during cooler evenings.</p>
+            <p>Use:</p>
+            <p>Fresh mushrooms</p>
+            <p>Garlic</p>
+            <p>Onion</p>
+            <p>Black pepper</p>
+            <p>Vegetable stock</p>
+            <p>Avoid heavy cream if you&#x27;re aiming for a lighter option.</p>
+            <h3>9. Roasted Chickpeas</h3>
+            <div class="calorie">Approximate Calories: Around 90 calories (small serving)</div>
+            <p>Roasted chickpeas provide crunch along with protein and fiber.</p>
+            <p>Flavor ideas:</p>
+            <p>Paprika</p>
+            <p>Garlic powder</p>
+            <p>Cumin</p>
+            <p>Black pepper</p>
+            <h3>10. Green Tea with Roasted Nuts</h3>
+            <div class="calorie">Approximate Calories: Around 90–100 calories</div>
+            <p>A cup of green tea paired with a small portion of unsalted almonds or pistachios makes a balanced evening
+                snack.</p>
+            <p>Remember that nuts are nutritious but calorie-dense, so portion size matters.</p>
+            <figure class="article-figure"><img src="images/healthy-snack-platter-evening.webp"
+                    alt="Healthy evening snack plate with makhana, fruit, vegetables, and green tea"></figure>
+            <h2>Tips for Smarter Evening Snacking</h2>
+            <p>Here are a few simple habits that can make your snacks more satisfying:</p>
+            <p>Eat slowly and mindfully.</p>
+            <p>Choose whole foods whenever possible.</p>
+            <p>Drink a glass of water before reaching for a snack.</p>
+            <p>Keep healthy snacks visible and easy to grab.</p>
+            <p>Avoid eating directly from large packets.</p>
+            <h2>Snacks to Enjoy Less Often</h2>
+            <p>These foods are perfectly okay once in a while, but they are usually higher in calories, sodium, or added
+                sugar:</p>
+            <p>Potato chips</p>
+            <p>Sugary biscuits</p>
+            <p>Deep-fried snacks</p>
+            <p>Candy</p>
+            <p>Sugar-sweetened beverages</p>
+            <p>Enjoy them occasionally while focusing on a balanced overall diet.</p>
+            <h2>Frequently Asked Questions</h2>
+            <h3>Can I eat snacks while trying to lose weight?</h3>
+            <p>Yes. Healthy snacks can fit into a balanced eating plan. The key is choosing nutritious foods and being
+                mindful of portion sizes.</p>
+            <h3>Is roasted makhana a good evening snack?</h3>
+            <p>Yes. Plain roasted makhana is crunchy, versatile, and can be a nutritious snack option when prepared with
+                minimal oil and moderate seasoning.</p>
+            <h3>Should I skip evening snacks?</h3>
+            <p>Not necessarily. If you&#x27;re genuinely hungry, a balanced snack may help prevent overeating later at
+                dinner.</p>
+            <h3>Are fruits better than packaged snacks?</h3>
+            <p>Fresh fruits provide vitamins, minerals, and dietary fiber, making them a nutritious choice compared with
+                many highly processed snack foods.</p>
+            <h2>Final Thoughts</h2>
+            <p>Evening hunger is completely normal, but your snack choices can make a big difference. Instead of
+                automatically reaching for chips or sugary treats, keeping a few nutritious options on hand can help you
+                satisfy cravings while supporting your overall health goals.</p>
+            <p>Roasted makhana, fresh fruits, yogurt, mushroom soup, vegetables, and air-popped popcorn are just a few
+                examples of snacks that are easy to prepare, enjoyable to eat, and suitable for many healthy eating
+                patterns. The goal isn&#x27;t to eliminate your favorite treats—it&#x27;s to build everyday habits that
+                are both satisfying and sustainable.</p>
+        </article>
+    </main>
+    <script>
+        const bar = document.querySelector('.reading-progress');
+        window.addEventListener('scroll', () => { const h = document.documentElement, m = h.scrollHeight - h.clientHeight; bar.style.width = (m ? (h.scrollTop / m * 100) : 0) + '%' });
+    </script>
+</body>
+
+</html>

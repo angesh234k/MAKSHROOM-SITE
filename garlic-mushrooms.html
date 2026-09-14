@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Garlic Mushrooms</title>
+    <meta name="description" content="Learn how to make easy garlic mushrooms with butter, garlic and herbs. A quick 15-minute mushroom appetizer or healthy snack that's simple and flavorful.">
+    <style>
+        :root {
+            --g: #176b4a;
+            --gd: #0e4d35;
+            --gs: #edf7f1;
+            --ink: #202823;
+            --muted: #68736d;
+            --page: #f4f8f5;
+            --line: #e1e9e4
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            background: var(--page);
+            color: var(--ink);
+            font-family: Arial, sans-serif
+        }
+
+        .progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: var(--g);
+            width: 0;
+            z-index: 9
+        }
+
+        .shell {
+            max-width: 940px;
+            margin: auto;
+            padding: 28px 20px 60px
+        }
+
+        .hero,
+        .content {
+            background: #fff;
+            border: 1px solid var(--line);
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(22, 55, 40, .06)
+        }
+
+        .hero img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            object-position: center 55%;
+            display: block
+        }
+
+        .hero-copy {
+            padding: 28px 44px 32px;
+            text-align: center
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 6px 11px;
+            border-radius: 999px;
+            background: var(--gs);
+            color: var(--gd);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: .08em
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: Georgia, serif
+        }
+
+        h1 {
+            font-size: 43px;
+            line-height: 1.12;
+            margin: 14px auto 12px
+        }
+
+        .sub {
+            font-size: 18px;
+            color: var(--muted);
+            margin: 0
+        }
+
+        .content {
+            margin-top: 24px;
+            padding: 44px 58px
+        }
+
+        h2 {
+            font-size: 29px;
+            margin: 40px 0 16px
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.72;
+            margin: 0 0 16px
+        }
+
+        .facts {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin: 24px 0
+        }
+
+        .fact {
+            background: #f8fbf9;
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            padding: 13px;
+            text-align: center
+        }
+
+        .fact strong {
+            display: block;
+            font-size: 12px;
+            color: var(--gd);
+            margin-bottom: 5px
+        }
+
+        .fact span {
+            font-size: 13px;
+            color: var(--muted)
+        }
+
+        .figure {
+            margin: 22px auto 28px
+        }
+
+        .figure img {
+            display: block;
+            width: 100%;
+            max-width: 620px;
+            height: auto;
+            object-fit: contain;
+            border-radius: 14px;
+            margin: auto
+        }
+
+        .steps-img img {
+            max-width: 700px
+        }
+
+        .ingredients {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 9px 14px
+        }
+
+        .ingredient {
+            background: #f8fbf9;
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            padding: 12px 14px;
+            font-size: 15px;
+            line-height: 1.5
+        }
+
+        .step {
+            display: flex;
+            gap: 14px;
+            align-items: flex-start;
+            background: #fbfdfc;
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            padding: 16px 18px;
+            margin: 10px 0
+        }
+
+        .step>span {
+            flex: 0 0 31px;
+            height: 31px;
+            border-radius: 50%;
+            background: var(--g);
+            color: #fff;
+            display: grid;
+            place-items: center;
+            font-weight: 700
+        }
+
+        .step h3 {
+            font-size: 18px;
+            margin: 3px 0 6px
+        }
+
+        .step p {
+            margin: 0
+        }
+
+        .tip {
+            margin-top: 34px;
+            background: #f8fbf9;
+            border: 1px solid var(--line);
+            border-radius: 14px;
+            padding: 4px 24px 12px
+        }
+
+        .tip h2 {
+            margin-top: 22px
+        }
+
+        .breadcrumb {
+            max-width: 760px;
+            margin: 0 auto 18px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .breadcrumb a {
+            color: #176b4a;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .breadcrumb span {
+            margin: 0 6px;
+        }
+
+        @media(max-width:700px) {
+            .shell {
+                padding: 10px 10px 36px
+            }
+
+            .hero img {
+                height: 280px;
+                object-fit: cover;
+                object-position: center 55%
+            }
+
+            .hero-copy {
+                padding: 22px 20px 25px
+            }
+
+            h1 {
+                font-size: 34px
+            }
+
+            .content {
+                padding: 28px 20px
+            }
+
+            h2 {
+                font-size: 26px
+            }
+
+            .facts {
+                grid-template-columns: 1fr
+            }
+
+            .ingredients {
+                grid-template-columns: 1fr
+            }
+
+            .figure img,
+            .steps-img img {
+                max-width: 100%
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="progress"></div>
+
+    <main class="shell">
+
+        <nav class="breadcrumb">
+            <a href="index.html">← Home</a>
+        </nav>
+        <header class="hero"><img src="images/garlic-mushrooms-main.webp" alt="Garlic mushrooms cooked with butter, garlic and herbs">
+            <div class="hero-copy"><span class="tag">HEALTHY SNACK IDEA</span>
+                <h1>Garlic Mushrooms</h1>
+                <p class="sub">Buttery, garlicky, herby mushrooms ready in just 15 minutes</p>
+            </div>
+        </header>
+        <article class="content">
+            <p>These garlic mushrooms are a simple, flavorful appetizer made with button mushrooms, butter, garlic and herbs. 
+            They come together quickly in one pan, making them a convenient option when you want a warm, savory snack without a complicated preparation.</p>
+            <div class="facts">
+                <div class="fact"><strong>Prep Time</strong><span>10 minutes</span></div>
+                <div class="fact"><strong>Cook Time</strong><span>5 minutes</span></div>
+                <div class="fact"><strong>Total Time</strong><span>15 minutes</span></div>
+            </div>
+            <h2>Ingredients</h2>
+            <figure class="figure"><img src="images/garlic-mushrooms-ingredients.webp"
+                    alt="Garlic Mushrooms ingredients"></figure>
+            <div class="ingredients">
+                <div class="ingredient">1 cup mushroom, around 100 gms, rinsed and cleaned</div>
+                <div class="ingredient">1 tablespoon butter</div>
+                <div class="ingredient">1 tablespoon garlic, minced</div>
+                <div class="ingredient">1 teaspoon crushed pepper</div>
+                <div class="ingredient">1 teaspoon mixed herbs</div>
+                <div class="ingredient">Salt to taste</div>
+                <div class="ingredient">1 tablespoon coriander leaves, finely chopped</div>
+            </div>
+            <h2>How to Make Butter Garlic Mushrooms Step by Step</h2>
+            <div class="step"><span>1</span>
+                <div>
+                    <h3>Prepare the Mushrooms</h3>
+                    <p>Rinse and clean mushroom well, slice thin and set aside. Melt 1 tablespoon butter in a pan.</p>
+                </div>
+            </div>
+            <div class="step"><span>2</span>
+                <div>
+                    <h3>Add the Garlic</h3>
+                    <p>Add 1 tablespoon minced garlic.</p>
+                </div>
+            </div>
+            <div class="step"><span>3</span>
+                <div>
+                    <h3>Sauté the Garlic</h3>
+                    <p>Sauté for 2 minutes on low flame until it turns slightly golden.</p>
+                </div>
+            </div>
+            <div class="step"><span>4</span>
+                <div>
+                    <h3>Add the Mushrooms</h3>
+                    <p>Then add the mushrooms to the pan.</p>
+                </div>
+            </div>
+            <div class="step"><span>5</span>
+                <div>
+                    <h3>Sauté and Cook</h3>
+                    <p>Sauté for a minute, let it cook for a minute, then sauté again.</p>
+                </div>
+            </div>
+            <div class="step"><span>6</span>
+                <div>
+                    <h3>Cook Until Dry</h3>
+                    <p>The mushrooms will leave out water, so sauté and cook until dry.</p>
+                </div>
+            </div>
+            <div class="step"><span>7</span>
+                <div>
+                    <h3>Add Pepper and Herbs</h3>
+                    <p>Add 1 teaspoon crushed pepper and 1 teaspoon mixed herbs.</p>
+                </div>
+            </div>
+            <div class="step"><span>8</span>
+                <div>
+                    <h3>Give a Quick Sauté</h3>
+                    <p>Give everything a quick sauté so the mushrooms are evenly coated with the seasoning.</p>
+                </div>
+            </div>
+            <div class="step"><span>9</span>
+                <div>
+                    <h3>Add Salt and Coriander</h3>
+                    <p>Add required salt and 1 tablespoon finely chopped coriander leaves.</p>
+                </div>
+            </div>
+            <div class="step"><span>10</span>
+                <div>
+                    <h3>Finish Cooking</h3>
+                    <p>Sauté for a minute, then switch off the heat.</p>
+                </div>
+            </div>
+            <div class="step"><span>11</span>
+                <div>
+                    <h3>Serve Hot</h3>
+                    <p>Garlic Mushrooms are ready! Serve hot with toast!</p>
+                </div>
+            </div>
+            <figure class="figure steps-img"><img src="images/garlic-mushrooms-steps.webp"
+                    alt="Garlic Mushrooms cooking steps"></figure>
+            <section class="tip">
+    <h2>Quick Tip</h2>
+    <p>For better texture, avoid overcrowding the pan while cooking the mushrooms. Give them enough space to sauté properly so they become nicely browned instead of turning too soft.</p>
+</section>
+
+<section class="tip">
+    <h2>Serving Suggestion</h2>
+    <p>Garlic Mushrooms are ready! Serve hot with toast.</p>
+</section>
+            </section>
+        </article>
+    </main>
+    <script>const b = document.querySelector('.progress'); addEventListener('scroll', () => { let d = document.documentElement, m = d.scrollHeight - d.clientHeight; b.style.width = (m ? d.scrollTop / m * 100 : 0) + '%' })</script>
+</body>
+
+</html>

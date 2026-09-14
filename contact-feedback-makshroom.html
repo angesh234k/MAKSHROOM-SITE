@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact & Feedback | Makshroom</title>
+<meta name="description" content="Contact Makshroom to share your questions, suggestions and feedback about healthy mushroom and makhana recipes, snacks and future products.">
+<style>
+body{font-family:Arial,sans-serif;background:#f6f8f3;margin:0;color:#333}
+header{background:#2e7d32;color:#fff;text-align:center;padding:40px 20px}
+.container{max-width:1000px;margin:auto;padding:24px}
+.card{background:#fff;padding:24px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.08);margin-bottom:24px}
+h2{color:#2e7d32}
+label{display:block;margin:12px 0 6px;font-weight:bold}
+input,textarea,select{width:100%;padding:10px;border:1px solid #ccc;border-radius:8px;box-sizing:border-box}
+.radio{margin-bottom:15px}
+.radio label{display:flex;justify-content:space-between;align-items:center;width:100%;padding:10px 0;font-weight:normal;cursor:pointer;margin:0}
+.radio input[type=radio]{width:20px;height:20px;margin:0;flex-shrink:0;cursor:pointer}
+.radio span{flex:1}
+button{margin-top:18px;background:#2e7d32;color:#fff;border:none;padding:12px 22px;border-radius:8px;cursor:pointer}
+.note{background:#eef8ee;padding:12px;border-left:4px solid #2e7d32}
+footer{text-align:center;background:#111;color:#fff;padding:18px}
+.back-home{position:fixed;top:20px;left:20px;background:#fff;color:#2e7d32;text-decoration:none;padding:10px 16px;border-radius:30px;font-weight:bold;box-shadow:0 2px 8px rgba(0,0,0,.15);z-index:1000}
+.back-home:hover{background:#2e7d32;color:#fff}
+</style>
+</head>
+<body>
+<a href="index.html" class="back-home">← Back to Home</a>
+<header><h1>Contact & Feedback</h1><p>Help us build healthier mushroom & makhana snacks!</p></header>
+<div class="container">
+<div class="card">
+<h2>Contact Us</h2>
+<p><strong>Email:</strong> <a href="mailto:makshroomofficial@gmail.com">makshroomofficial@gmail.com</a></p>
+<p>We'd love to hear your ideas, questions and suggestions.</p>
+</div>
+<form class="card" id="feedbackForm">
+<h2>Send Us a Message</h2>
+<label>Full Name</label><input type="text" id="name">
+<label>Email Address</label><input type="email" id="email">
+<label>Subject</label>
+<select id="subject"><option>General Enquiry</option><option>Product Feedback</option><option>Partnership</option><option>Complaint</option><option>Suggestion</option></select>
+<label>Your Message</label><textarea id="message" rows="5"></textarea>
+<h2>Snack & Flavour Survey</h2>
+<label>1. Which Makshroom product interests you most?</label>
+<div class="radio">
+<label><span>Mushroom Chips</span><input type="radio" name="product" value="Mushroom Chips"></label>
+<label><span>Roasted Makhana</span><input type="radio" name="product" value="Roasted Makhana"></label>
+<label><span>Both</span><input type="radio" name="product" value="Both"></label>
+</div>
+<label>2. Which flavour would you buy first?</label>
+<div class="radio">
+<label><span>Peri Peri</span><input type="radio" name="flavour" value="Peri Peri"></label>
+<label><span>Cheese</span><input type="radio" name="flavour" value="Cheese"></label>
+<label><span>Garlic Herb</span><input type="radio" name="flavour" value="Garlic Herb"></label>
+<label><span>Tandoori</span><input type="radio" name="flavour" value="Tandoori"></label>
+<label><span>Barbecue</span><input type="radio" name="flavour" value="Barbecue"></label>
+<label><span>Truffle</span><input type="radio" name="flavour" value="Truffle"></label>
+<label><span>Sour Cream & Onion</span><input type="radio" name="flavour" value="Sour Cream & Onion"></label>
+</div>
+<label>3. Suggest your own flavour</label><input type="text" id="customFlavour" placeholder="Example: Wasabi, Pizza, Mint Masala">
+<label>4. How often do you eat healthy snacks?</label>
+<select id="snackFrequency"><option>Daily</option><option>2-3 times a week</option><option>Weekly</option><option>Occasionally</option></select>
+<label>5. Preferred price per pack</label>
+<select id="pricePreference"><option>₹50-75</option><option>₹75-100</option><option>₹100-150</option><option>Above ₹150</option></select>
+<label>6. Where do you usually buy snacks?</label>
+<select id="buyLocation"><option>Supermarket</option><option>Amazon</option><option>Blinkit</option><option>Zepto</option><option>Local Store</option></select>
+<label>Additional Suggestions</label><textarea id="additionalSuggestion" rows="4"></textarea>
+<div class="note"><strong>Privacy:</strong> Your feedback helps us improve Makshroom products and services.</div>
+<button type="submit">Submit Feedback</button>
+</form>
+</div>
+<footer>© 2026 Makshroom • Healthy Bites, Global Delights</footer>
+<script src="contact-form.js"></script>
+</body>
+</html>

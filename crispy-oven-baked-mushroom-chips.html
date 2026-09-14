@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Crispy Oven-Baked Mushroom Chips</title>
+    <meta name="description" content="Learn how to make crispy oven-baked mushroom chips with olive oil, garlic, smoked paprika and herbs. A savory, crunchy mushroom snack made in the oven.">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --green: #176b4a;
+            --green-dark: #0e4d35;
+            --green-soft: #edf7f1;
+            --ink: #202823;
+            --muted: #68736d;
+            --page: #f4f8f5;
+            --line: #e1e9e4
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            background: var(--page);
+            color: var(--ink);
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        .reading-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: var(--green);
+            width: 0;
+            z-index: 100
+        }
+
+        .article-shell {
+            max-width: 940px;
+            margin: auto;
+            padding: 28px 20px 60px
+        }
+
+        .article-hero,
+        .article-content {
+            background: #fff;
+            border: 1px solid var(--line);
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(22, 55, 40, .06)
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 390px;
+            object-fit: cover;
+            display: block
+        }
+
+        .hero-copy {
+            padding: 28px 44px 32px;
+            text-align: center
+        }
+
+        .category {
+            display: inline-block;
+            padding: 6px 11px;
+            border-radius: 999px;
+            background: var(--green-soft);
+            color: var(--green-dark);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: .08em
+        }
+
+        h1 {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 43px;
+            line-height: 1.12;
+            margin: 14px auto 12px;
+            max-width: 760px
+        }
+
+        .subtitle {
+            font-size: 18px;
+            line-height: 1.5;
+            color: var(--muted);
+            margin: 0
+        }
+
+        .article-content {
+            margin-top: 24px;
+            padding: 44px 58px
+        }
+
+        h2 {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 29px;
+            line-height: 1.25;
+            margin: 40px 0 16px
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.72;
+            margin: 0 0 16px
+        }
+
+        .recipe-facts {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            margin: 24px 0
+        }
+
+        .fact {
+            background: #f8fbf9;
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            padding: 13px;
+            text-align: center
+        }
+
+        .fact strong {
+            display: block;
+            font-size: 12px;
+            color: var(--green-dark);
+            margin-bottom: 5px
+        }
+
+        .fact span {
+            font-size: 13px;
+            color: var(--muted)
+        }
+
+        .article-figure {
+            margin: 22px auto 28px
+        }
+
+        .article-figure img {
+            display: block;
+            width: 100%;
+            max-width: 620px;
+            height: auto;
+            object-fit: contain;
+            border-radius: 14px;
+            margin: auto
+        }
+
+        .steps-figure img {
+            max-width: 700px
+        }
+
+        .ingredients-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 9px 14px
+        }
+
+        .ingredient-item {
+            background: #f8fbf9;
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            padding: 12px 14px;
+            font-size: 15px;
+            line-height: 1.5
+        }
+
+        .step-card {
+            display: flex;
+            gap: 14px;
+            align-items: flex-start;
+            background: #fbfdfc;
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            padding: 16px 18px;
+            margin: 10px 0
+        }
+
+        .step-num {
+            flex: 0 0 31px;
+            height: 31px;
+            border-radius: 50%;
+            background: var(--green);
+            color: #fff;
+            display: grid;
+            place-items: center;
+            font-weight: 700
+        }
+
+        .step-card p {
+            margin: 2px 0 0
+        }
+
+        .summary-box {
+            margin-top: 34px;
+            background: #f8fbf9;
+            border: 1px solid var(--line);
+            border-radius: 14px;
+            padding: 4px 24px 12px
+        }
+
+        .summary-box h2 {
+            margin-top: 22px
+        }
+
+        .breadcrumb {
+            max-width: 760px;
+            margin: 0 auto 18px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .breadcrumb a {
+            color: #176b4a;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .breadcrumb span {
+            margin: 0 6px;
+        }
+
+        @media(max-width:700px) {
+            .article-shell {
+                padding: 10px 10px 36px
+            }
+
+            .hero-image {
+                height: 260px
+            }
+
+            .hero-copy {
+                padding: 22px 20px 25px
+            }
+
+            h1 {
+                font-size: 34px
+            }
+
+            .subtitle {
+                font-size: 16px
+            }
+
+            .article-content {
+                padding: 28px 20px
+            }
+
+            h2 {
+                font-size: 26px
+            }
+
+            .recipe-facts {
+                grid-template-columns: 1fr 1fr
+            }
+
+            .ingredients-grid {
+                grid-template-columns: 1fr
+            }
+
+            .article-figure img,
+            .steps-figure img {
+                max-width: 100%
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="reading-progress"></div>
+
+    <main class="article-shell">
+
+        <nav class="breadcrumb">
+            <a href="index.html">← Home</a>
+        </nav>
+        <header class="article-hero"><img class="hero-image" src="images/mushroom-chips-main.webp"
+                alt="Crispy oven-baked mushroom chips">
+            <div class="hero-copy"><span class="category">HEALTHY SNACK IDEA</span>
+                <h1>Crispy Oven-Baked Mushroom Chips</h1>
+                <p class="subtitle">Crispy, savory, and full of umami flavor</p>
+            </div>
+        </header>
+        <article class="article-content">
+            <p>If you think mushrooms belong only in curries, soups, or stir-fries, these crispy oven-baked mushroom
+                chips might change your mind. Thinly sliced mushrooms are lightly coated with olive oil, garlic, smoked
+                paprika, black pepper, and herbs before being slowly baked until their edges become crisp and deeply
+                savoury.</p>
+            <p>These chips are a lighter alternative to many fried snacks and work well as an evening snack, appetizer,
+                or crunchy topping for soups and salads. The recipe uses simple seasonings, but the natural umami
+                flavour of mushrooms makes the final result surprisingly satisfying.</p>
+            <div class="recipe-facts">
+                <div class="fact"><strong>Prep Time</strong><span>10 minutes</span></div>
+                <div class="fact"><strong>Cook Time</strong><span>1 hour 10 minutes</span></div>
+                <div class="fact"><strong>Total Time</strong><span>1 hour 20 minutes</span></div>
+                <div class="fact"><strong>Course</strong><span>Appetizer / Healthy Snack</span></div>
+                <div class="fact"><strong>Servings</strong><span>2</span></div>
+            </div>
+            <h2>Ingredients</h2>
+            <p>For the recipe, use:</p>
+            <figure class="article-figure"><img src="images/mushroom-chips-ingredients.webp"
+                    alt="Mushroom chips ingredients"></figure>
+            <div class="ingredients-grid">
+                <div class="ingredient-item">3 ounces button mushrooms</div>
+                <div class="ingredient-item">3 ounces brown pearl mushrooms</div>
+                <div class="ingredient-item">1 large portobello mushroom</div>
+                <div class="ingredient-item">2 tablespoons olive oil</div>
+                <div class="ingredient-item">½ teaspoon garlic powder</div>
+                <div class="ingredient-item">½ teaspoon smoked paprika</div>
+                <div class="ingredient-item">½ teaspoon dried oregano</div>
+                <div class="ingredient-item">¼ teaspoon black pepper</div>
+                <div class="ingredient-item">Salt to taste</div>
+                <div class="ingredient-item">Optional: a small pinch of chili flakes for extra heat</div>
+            </div>
+            <p style="margin-top:18px">This keeps the base of your original recipe but gives the chips more flavor. I
+                would not add wet sauces because extra moisture can make it harder for the mushroom slices to become
+                crisp.</p>
+            <h2>Instructions</h2>
+            <div class="step-card"><span class="step-num">1</span>
+                <p>Preheat the oven to 300°F (150°C) and line two baking trays with parchment paper.</p>
+            </div>
+            <div class="step-card"><span class="step-num">2</span>
+                <p>Clean the mushrooms gently and slice them thinly, keeping the slices no more than ¼ inch thick. Try
+                    to keep the thickness reasonably consistent so they cook evenly.</p>
+            </div>
+            <div class="step-card"><span class="step-num">3</span>
+                <p>Place the mushroom slices in a large bowl. Add olive oil, garlic powder, smoked paprika, oregano,
+                    black pepper, salt, and optional chili flakes.</p>
+            </div>
+            <div class="step-card"><span class="step-num">4</span>
+                <p>Toss gently until the mushroom slices are lightly and evenly coated with the seasoning.</p>
+            </div>
+            <div class="step-card"><span class="step-num">5</span>
+                <p>Arrange the slices in a single layer on the prepared baking trays. Avoid overlapping them because
+                    overcrowding can trap moisture and prevent crisping.</p>
+            </div>
+            <div class="step-card"><span class="step-num">6</span>
+                <p>Place one tray in the upper half of the oven and the other in the lower half. Bake for 30 minutes.
+                </p>
+            </div>
+            <div class="step-card"><span class="step-num">7</span>
+                <p>Switch the positions of the trays and continue baking for another 30 minutes.</p>
+            </div>
+            <div class="step-card"><span class="step-num">8</span>
+                <p>Check the mushroom chips for crispness. Smaller and thinner slices may be ready first, so remove
+                    those if necessary.</p>
+            </div>
+            <div class="step-card"><span class="step-num">9</span>
+                <p>Bake thicker pieces and portobello slices for approximately 10 additional minutes, or until the edges
+                    are crisp and the mushrooms are properly dried.</p>
+            </div>
+            <div class="step-card"><span class="step-num">10</span>
+                <p>Remove from the oven and allow the chips to cool for a few minutes before serving. They will become
+                    slightly firmer as they cool.</p>
+            </div>
+            <figure class="article-figure steps-figure"><img src="images/mushroom-chips-steps.webp"
+                    alt="Mushroom chips preparation steps"></figure>
+            <section class="summary-box">
+                <h2>In Summation</h2>
+                <p>Mushrooms don’t have to be served only stuffed, sautéed, or added to curries. When sliced thinly,
+                    lightly seasoned, and slowly baked, they can become a savory and flavourful snack with naturally
+                    rich umami character.</p>
+                <p>These oven-baked mushroom chips are simple enough for everyday snacking but flavourful enough to
+                    serve as an appetizer. The combination of garlic, smoked paprika, oregano, and black pepper gives
+                    the mushrooms a warm savoury flavour without overpowering their natural taste.</p>
+            </section>
+        </article>
+    </main>
+    <script>const bar = document.querySelector('.reading-progress'); window.addEventListener('scroll', () => { const h = document.documentElement, m = h.scrollHeight - h.clientHeight; bar.style.width = (m ? (h.scrollTop / m * 100) : 0) + '%' });</script>
+</body>
+
+</html>

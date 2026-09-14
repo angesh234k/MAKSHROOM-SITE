@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Makhana Chaat</title>
+    <meta name="description" content="Learn how to make Makhana Chaat with roasted makhana, curd, chutneys, spices and fresh toppings. A quick, crunchy and tangy Indian snack ready in just 20 minutes.">
+    <style>
+        :root {
+            --g: #176b4a;
+            --gd: #0e4d35;
+            --gs: #edf7f1;
+            --ink: #202823;
+            --muted: #68736d;
+            --page: #f4f8f5;
+            --line: #e1e9e4
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            background: var(--page);
+            color: var(--ink);
+            font-family: Arial, sans-serif
+        }
+
+        .progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: var(--g);
+            width: 0;
+            z-index: 9
+        }
+
+        .shell {
+            max-width: 940px;
+            margin: auto;
+            padding: 28px 20px 60px
+        }
+
+        .hero,
+        .content {
+            background: #fff;
+            border: 1px solid var(--line);
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(22, 55, 40, .06)
+        }
+
+        .hero img {
+            width: 100%;
+            height: 390px;
+            object-fit: cover;
+            display: block
+        }
+
+        .hero-copy {
+            padding: 28px 44px 32px;
+            text-align: center
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 6px 11px;
+            border-radius: 999px;
+            background: var(--gs);
+            color: var(--gd);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: .08em
+        }
+
+        h1,
+        h2 {
+            font-family: Georgia, serif
+        }
+
+        h1 {
+            font-size: 43px;
+            line-height: 1.12;
+            margin: 14px auto 12px
+        }
+
+        .sub {
+            font-size: 18px;
+            color: var(--muted);
+            margin: 0
+        }
+
+        .content {
+            margin-top: 24px;
+            padding: 44px 58px
+        }
+
+        h2 {
+            font-size: 29px;
+            margin: 40px 0 16px
+        }
+
+        p,
+        li {
+            font-size: 16px;
+            line-height: 1.72
+        }
+
+        p {
+            margin: 0 0 16px
+        }
+
+        .facts {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin: 24px 0
+        }
+
+        .fact,
+        .ingredient {
+            background: #f8fbf9;
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            padding: 13px;
+            text-align: center;
+            font-size: 14px
+        }
+
+        .figure {
+            margin: 22px auto 28px
+        }
+
+        .figure img {
+            display: block;
+            width: 100%;
+            max-width: 620px;
+            height: auto;
+            object-fit: contain;
+            border-radius: 14px;
+            margin: auto
+        }
+
+        .steps-img img {
+            max-width: 700px
+        }
+
+        .ingredients {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 9px 14px
+        }
+
+        .ingredient {
+            text-align: left;
+            font-size: 15px
+        }
+
+        .step {
+            display: flex;
+            gap: 14px;
+            align-items: flex-start;
+            background: #fbfdfc;
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            padding: 16px 18px;
+            margin: 10px 0
+        }
+
+        .num {
+            flex: 0 0 31px;
+            height: 31px;
+            border-radius: 50%;
+            background: var(--g);
+            color: #fff;
+            display: grid;
+            place-items: center;
+            font-weight: 700
+        }
+
+        .step p {
+            margin: 2px 0 0
+        }
+
+        .box {
+            margin-top: 34px;
+            background: #f8fbf9;
+            border: 1px solid var(--line);
+            border-radius: 14px;
+            padding: 4px 24px 18px
+        }
+
+        .box h2 {
+            margin-top: 22px
+        }
+
+        .nutrition-table-wrap {
+            max-width: 700px;
+            margin: 18px auto 4px;
+            overflow: hidden;
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            background: #fff
+        }
+
+        .nutrition-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px
+        }
+
+        .nutrition-table th {
+            padding: 13px 16px;
+            background: var(--green-soft);
+            color: var(--green-dark);
+            text-align: left;
+            font-size: 13px;
+            letter-spacing: .03em
+        }
+
+        .nutrition-table th:last-child,
+        .nutrition-table td:last-child {
+            text-align: right
+        }
+
+        .nutrition-table td {
+            padding: 11px 16px;
+            border-bottom: 1px solid var(--line);
+            line-height: 1.4
+        }
+
+        .nutrition-table tr:last-child td {
+            border-bottom: none
+        }
+
+        .nutrition-table td:first-child {
+            font-weight: 600
+        }
+
+        .nutrition-table td:last-child {
+            color: var(--muted);
+            font-weight: 600
+        }
+
+        .nutrition-note {
+            font-size: 12px;
+            color: var(--muted);
+            margin: 12px 0 0
+        }
+
+        .breadcrumb {
+            max-width: 760px;
+            margin: 0 auto 18px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .breadcrumb a {
+            color: #176b4a;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .breadcrumb span {
+            margin: 0 6px;
+        }
+
+        @media(max-width:700px) {
+            .shell {
+                padding: 10px 10px 36px
+            }
+
+            .hero img {
+                height: 260px
+            }
+
+            .hero-copy {
+                padding: 22px 20px 25px
+            }
+
+            h1 {
+                font-size: 34px
+            }
+
+            .content {
+                padding: 28px 20px
+            }
+
+            h2 {
+                font-size: 26px
+            }
+
+            .facts,
+            .ingredients {
+                grid-template-columns: 1fr
+            }
+
+            .figure img,
+            .steps-img img {
+                max-width: 100%
+            }
+
+            .nutrition-table {
+                font-size: 13px
+            }
+
+            .nutrition-table th,
+            .nutrition-table td {
+                padding: 10px 9px
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="progress"></div>
+
+    <main class="shell">
+
+        <nav class="breadcrumb">
+            <a href="index.html">← Home</a>
+
+        </nav>
+        <header class="hero"><img src="images/makhana-chaat-main.webp" alt="Makhana Chaat with roasted makhana, curd and chutneys">
+            <div class="hero-copy"><span class="tag">HEALTHY SNACK IDEA</span>
+                <h1>Makhana Chaat</h1>
+                <p class="sub">Creamy, crunchy, tangy and full of classic chaat flavour</p>
+            </div>
+        </header>
+        <article class="content">
+           <p>Makhana Chaat is a quick Indian snack made with ghee-roasted phool makhana, creamy curd, tangy chutneys and classic chaat spices. It combines the crunch of roasted makhana with fresh toppings for an easy snack that can be assembled in about 20 minutes.</p>
+            
+            <div class="facts">
+                <div class="fact">Prep Time — 10 minutes</div>
+                <div class="fact">Cook Time — 10 minutes</div>
+                <div class="fact">Total Time — 20 minutes</div>
+            </div>
+            <h2>Ingredients</h2>
+            <figure class="figure"><img src="images/makhana-chaat-ingredients.webp"
+                    alt="Labelled Makhana Chaat ingredients"></figure>
+            <div class="ingredients">
+                <div class="ingredient">1.5 cups makhana</div>
+                <div class="ingredient">2 teaspoon ghee</div>
+                <div class="ingredient">1 cup curd</div>
+                <div class="ingredient">2 tablespoon sugar</div>
+                <div class="ingredient">green chutney as needed</div>
+                <div class="ingredient">sweet chutney as needed</div>
+                <div class="ingredient">red chilli powder</div>
+                <div class="ingredient">chat masala powder</div>
+                <div class="ingredient">roasted jeera powder</div>
+                <div class="ingredient">raw onion</div>
+                <div class="ingredient">coriander leaves for garnish</div>
+                <div class="ingredient">sev</div>
+            </div>
+            <h2>Instructions</h2>
+            <div class="step"><span class="num">1</span>
+                <p>Heat ghee in a pan - add makhana and roast in low medium flame until crisp.Do not burn it so roast in
+                    low medium flame only.</p>
+            </div>
+            <div class="step"><span class="num">2</span>
+                <p>Press and break for checking, if its crisp then it will break easily.Switch off and take the pan out
+                    from the flame.</p>
+            </div>
+            <div class="step"><span class="num">3</span>
+                <p>To a mixing bowl add curd, sugar whisk well until smooth.Add roasted makhana to it.</p>
+            </div>
+            <div class="step"><span class="num">4</span>
+                <p>Mix well.To the serving bowl:add curd makhana to it.</p>
+            </div>
+            <div class="step"><span class="num">5</span>
+                <p>Sprinkle jeera powder,red chilli powder,chat masala powder on top, Add raw onion,coriander leaves and
+                    finally garnish with sev.</p>
+            </div>
+            <div class="step"><span class="num">6</span>
+                <p>Serve immediately!</p>
+            </div>
+            <figure class="figure steps-img"><img src="images/makhana-chaat-steps.webp"
+                    alt="Six steps for Makhana Chaat"></figure>
+            <section class="box">
+                <h2>Notes</h2>
+                <ul>
+                    <li>If you are serving later then add makhana only while serving.</li>
+                    <li>You can make the chaats in batches while serving too.</li>
+                    <li>I have not added measurements for chutneys and spice powders as it can be as per your liking and
+                        taste.</li>
+                </ul>
+            </section>
+            <section class="box">
+                <h2>Nutrition Facts</h2>
+                <p>Makhana Chaat · Amount Per Serving (100 g)</p>
+                <div class="nutrition-table-wrap">
+                    <table class="nutrition-table">
+                        <thead>
+                            <tr>
+                                <th>Nutrient</th>
+                                <th>Amount</th>
+                                <th>% Daily Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Calories</td>
+                                <td>294</td>
+                                <td>—</td>
+                            </tr>
+                            <tr>
+                                <td>Calories from Fat</td>
+                                <td>126</td>
+                                <td>—</td>
+                            </tr>
+                            <tr>
+                                <td>Fat</td>
+                                <td>14 g</td>
+                                <td>22%</td>
+                            </tr>
+                            <tr>
+                                <td>Saturated Fat</td>
+                                <td>7 g</td>
+                                <td>44%</td>
+                            </tr>
+                            <tr>
+                                <td>Polyunsaturated Fat</td>
+                                <td>2 g</td>
+                                <td>—</td>
+                            </tr>
+                            <tr>
+                                <td>Monounsaturated Fat</td>
+                                <td>4 g</td>
+                                <td>—</td>
+                            </tr>
+                            <tr>
+                                <td>Cholesterol</td>
+                                <td>25 mg</td>
+                                <td>8%</td>
+                            </tr>
+                            <tr>
+                                <td>Sodium</td>
+                                <td>371 mg</td>
+                                <td>16%</td>
+                            </tr>
+                            <tr>
+                                <td>Potassium</td>
+                                <td>806 mg</td>
+                                <td>23%</td>
+                            </tr>
+                            <tr>
+                                <td>Carbohydrates</td>
+                                <td>38 g</td>
+                                <td>13%</td>
+                            </tr>
+                            <tr>
+                                <td>Fiber</td>
+                                <td>9 g</td>
+                                <td>38%</td>
+                            </tr>
+                            <tr>
+                                <td>Sugar</td>
+                                <td>15 g</td>
+                                <td>17%</td>
+                            </tr>
+                            <tr>
+                                <td>Protein</td>
+                                <td>10 g</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>Vitamin A</td>
+                                <td>4959 IU</td>
+                                <td>99%</td>
+                            </tr>
+                            <tr>
+                                <td>Vitamin C</td>
+                                <td>3 mg</td>
+                                <td>4%</td>
+                            </tr>
+                            <tr>
+                                <td>Calcium</td>
+                                <td>250 mg</td>
+                                <td>25%</td>
+                            </tr>
+                            <tr>
+                                <td>Iron</td>
+                                <td>8 mg</td>
+                                <td>44%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="nutrition-note">* Nutrition values are approximate and can vary depending on ingredient brands, quantities and preparation method. Percent Daily Values are based on a 2000 calorie diet.</p>
+            </section>
+        </article>
+    </main>
+    <script>const b = document.querySelector('.progress'); addEventListener('scroll', () => { let d = document.documentElement, m = d.scrollHeight - d.clientHeight; b.style.width = (m ? d.scrollTop / m * 100 : 0) + '%' })</script>
+</body>
+
+</html>

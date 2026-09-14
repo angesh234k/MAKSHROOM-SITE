@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Benefits of Makhana for Weight Loss | Makshroom</title>
+  <meta name="description" content="Learn how makhana can fit into a balanced weight-management diet, with practical tips for portion control, roasting and healthier snacking choices.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --green: #194f35;
+      --leaf: #5f9d59;
+      --cream: #fbfaf6;
+      --soft: #f5f4ef;
+      --peach: #fff7ef;
+      --ink: #171c18;
+      --muted: #687069;
+      --line: #e7e6df
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      margin: 0;
+      background: #fff;
+      color: var(--ink);
+      font-family: "DM Sans", Arial, sans-serif;
+      line-height: 1.55
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none
+    }
+
+    .page {
+      width: 100%;
+      max-width: none;
+      margin: 0 auto;
+      padding: 0 clamp(32px, 6vw, 110px)
+    }
+
+    .serif {
+      font-family: "Playfair Display", Georgia, serif;
+      color: var(--green)
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 0;
+      font-size: 14px
+    }
+
+    .crumbs {
+      color: #657068
+    }
+
+    .crumbs b {
+      color: var(--green);
+      font-weight: 500
+    }
+
+    .back {
+      font-weight: 600
+    }
+
+    .hero {
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(90deg, #fff 0%, #fff 48%, #f8f6ef 48%, #f8f6ef 100%)
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.12fr;
+      min-height: 510px;
+      align-items: stretch
+    }
+
+    .hero-copy {
+      padding: 55px 46px 48px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      width: max-content;
+      background: #e7f2e4;
+      color: #4c8b4d;
+      border-radius: 20px;
+      padding: 6px 13px;
+      font-size: 12px;
+      font-weight: 700
+    }
+
+    .hero h1 {
+      font-family: "Playfair Display", Georgia, serif;
+      color: #143f2a;
+      font-size: 56px;
+      line-height: 1.08;
+      margin: 26px 0 20px;
+      letter-spacing: -1.5px
+    }
+
+    .subtitle {
+      font-size: 20px;
+      max-width: 520px;
+      margin: 0 0 34px
+    }
+
+    .byline {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 14px;
+      font-weight: 600
+    }
+
+    .avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: #e7b477;
+      display: grid;
+      place-items: center;
+      color: white;
+      font-size: 20px
+    }
+
+    .hero-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      min-height: 510px
+    }
+
+    .intro {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 60px;
+      padding: 54px 0 48px;
+      border-bottom: 1px solid var(--line)
+    }
+
+    .intro p {
+      margin: 0 0 14px;
+      font-size: 16px
+    }
+
+    .intro strong {
+      font-weight: 700
+    }
+
+    .icon-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      align-items: start
+    }
+
+    .mini {
+      text-align: center;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.3
+    }
+
+    .circle {
+      width: 70px;
+      height: 70px;
+      margin: 0 auto 12px;
+      border-radius: 50%;
+      background: #eef3e7;
+      display: grid;
+      place-items: center;
+      color: var(--green);
+      font-size: 31px
+    }
+
+    .section {
+      padding: 44px 0
+    }
+
+    .section-title {
+      text-align: center;
+      font-family: "Playfair Display", Georgia, serif;
+      color: var(--green);
+      font-size: 34px;
+      margin: 0 0 30px
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px
+    }
+
+    .card {
+      background: linear-gradient(145deg, #faf9f5, #fff);
+      border: 1px solid #f0eee7;
+      border-radius: 14px;
+      padding: 26px 20px 25px;
+      text-align: center;
+      box-shadow: 0 8px 24px rgba(36, 48, 39, .035)
+    }
+
+    .card .circle {
+      width: 66px;
+      height: 66px;
+      font-size: 28px
+    }
+
+    .card h3 {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 20px;
+      margin: 13px 0 10px;
+      color: #1c2b20
+    }
+
+    .card p {
+      font-size: 14px;
+      margin: 0;
+      color: #313733
+    }
+
+    .how {
+      display: grid;
+      grid-template-columns: .85fr 1.35fr;
+      gap: 48px;
+      align-items: center;
+      padding: 22px 0 42px
+    }
+
+    .how h2 {
+      font-family: "Playfair Display", Georgia, serif;
+      color: var(--green);
+      font-size: 34px;
+      line-height: 1.2;
+      margin: 0 0 24px
+    }
+
+    .tips {
+      list-style: none;
+      padding: 0;
+      margin: 0
+    }
+
+    .tips li {
+      position: relative;
+      padding-left: 30px;
+      margin: 15px 0;
+      font-size: 16px
+    }
+
+    .tips li:before {
+      content: "●";
+      position: absolute;
+      left: 4px;
+      color: #68a75d;
+      font-size: 18px
+    }
+
+    .how img {
+      width: 100%;
+      height: 365px;
+      object-fit: cover;
+      border-radius: 12px
+    }
+
+    .watch {
+      display: grid;
+      grid-template-columns: 70px 1fr 210px;
+      align-items: center;
+      gap: 20px;
+      background: var(--peach);
+      border: 1px solid #f0d5bd;
+      border-radius: 14px;
+      padding: 18px 24px;
+      margin: 0 0 30px
+    }
+
+    .warning {
+      font-size: 46px;
+      color: #c97735
+    }
+
+    .watch h3 {
+      font-family: "Playfair Display", Georgia, serif;
+      color: #b75f2d;
+      font-size: 23px;
+      margin: 0 0 3px
+    }
+
+    .watch p {
+      margin: 0;
+      font-size: 14px
+    }
+
+    .watch img {
+      width: 100%;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 10px
+    }
+
+    .bottom {
+      display: grid;
+      grid-template-columns: 90px 1fr 190px;
+      align-items: center;
+      gap: 25px;
+      background: #fbfcf7;
+      border: 1px solid #dfe6d8;
+      border-radius: 14px;
+      padding: 24px 28px
+    }
+
+    .bottom-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: #5c9d55;
+      color: #fff;
+      display: grid;
+      place-items: center;
+      font-size: 34px
+    }
+
+    .bottom h3 {
+      font-family: "Playfair Display", Georgia, serif;
+      color: var(--green);
+      font-size: 26px;
+      margin: 0 0 6px
+    }
+
+    .bottom p {
+      margin: 0;
+      font-size: 15px
+    }
+
+    .bottom img {
+      width: 100%;
+      height: 125px;
+      object-fit: cover;
+      border-radius: 10px
+    }
+
+    .source {
+      font-size: 12px;
+      color: #646b65;
+      margin: 18px 0 40px
+    }
+
+    .article-main {
+      max-width: 1440px
+    }
+
+    .source strong {
+      color: #222
+    }
+
+    @media(min-width:1450px) {
+      .hero-copy {
+        padding-right: 70px
+      }
+
+      .hero h1 {
+        font-size: 60px
+      }
+
+      .hero-grid {
+        min-height: 540px
+      }
+
+      .hero-img {
+        min-height: 540px
+      }
+    }
+
+    .crumbs a {
+      color: #176b4a;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .crumbs a:hover {
+      text-decoration: underline;
+    }
+
+    .crumbs span {
+      color: #666;
+    }
+
+    @media(max-width:900px) {
+      .hero {
+        background: #fff
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr
+      }
+
+      .hero-copy {
+        padding: 35px 0
+      }
+
+      .hero h1 {
+        font-size: 43px
+      }
+
+      .hero-img {
+        min-height: 330px;
+        max-height: 430px
+      }
+
+      .intro {
+        grid-template-columns: 1fr;
+        gap: 30px
+      }
+
+      .cards {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .how {
+        grid-template-columns: 1fr
+      }
+
+      .how img {
+        height: 320px
+      }
+    }
+
+    @media(max-width:620px) {
+      .page {
+        padding: 0 18px
+      }
+
+      .topbar {
+        font-size: 12px
+      }
+
+      .back {
+        display: inline-block;
+      }
+
+      .hero h1 {
+        font-size: 37px
+      }
+
+      .subtitle {
+        font-size: 17px
+      }
+
+      .hero-img {
+        min-height: 260px
+      }
+
+      .intro {
+        padding: 35px 0
+      }
+
+      .icon-row {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .cards {
+        grid-template-columns: 1fr
+      }
+
+      .section-title {
+        text-align: left;
+        font-size: 29px
+      }
+
+      .watch {
+        grid-template-columns: 52px 1fr
+      }
+
+      .watch img {
+        display: none
+      }
+
+      .bottom {
+        grid-template-columns: 64px 1fr
+      }
+
+      .bottom img {
+        display: none
+      }
+
+      .bottom-icon {
+        width: 58px;
+        height: 58px
+      }
+
+      .how h2 {
+        font-size: 29px
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="hero">
+    <div class="page">
+      <div class="topbar">
+        <div class="crumbs">
+          <a href="index.html">Home</a>
+          &nbsp;›&nbsp;
+          <a href="index.html#blog">Blog</a>
+          &nbsp;›&nbsp;
+          <span>Benefits of Makhana for Weight Loss</span>
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <span class="tag">◉ &nbsp; HEALTH</span>
+              <h1>Benefits of Makhana<br>for Weight Loss</h1>
+              <p class="subtitle">Makhana is more than just a crunchy snack. Here’s how it can support your weight loss
+                journey when eaten the right way.</p>
+              <div class="byline"><span class="avatar">♨</span><span>By Makshroom Team</span><span>•</span><span>June 9,
+                  2025</span></div>
+            </div>
+            <img class="hero-img" src="images/makhana-weight-loss-hero.webp" alt="Bowl of roasted makhana for healthy snacking"d
+          </div>
+        </div>
+  </header>
+
+  <main class="page article-main">
+    <section class="intro">
+      <div>
+        <p>Weight loss isn’t about eating less, it’s about eating smart.</p>
+        <p>Makhana (fox nuts) is a light, crunchy snack that can fit into a balanced diet. Used as a thoughtful
+          replacement for more energy-dense snacks, it can make healthier eating habits easier to maintain.</p>
+        <strong>Small swaps like these can create meaningful results over time.</strong>
+      </div>
+      <div class="icon-row">
+        <div class="mini">
+          <div class="circle">🍃</div>Light &amp;<br>Portion-Friendly
+        </div>
+        <div class="mini">
+          <div class="circle">🌾</div>Naturally<br>Gluten-Free
+        </div>
+        <div class="mini">
+          <div class="circle">🌱</div>Easy to<br>Roast
+        </div>
+        <div class="mini">
+          <div class="circle">♡</div>Supports<br>Healthy Habits
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">How Makhana Helps in Weight Loss</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="circle">◴</div>
+          <h3>Smarter Snack Swap</h3>
+          <p>Replacing frequent fried or heavily processed snacks with a sensible serving of roasted makhana can support
+            better eating habits.</p>
+        </article>
+        <article class="card">
+          <div class="circle">♨</div>
+          <h3>Easy to Portion</h3>
+          <p>Serve it in a small bowl instead of eating from a large packet or container. That makes mindful snacking
+            much easier.</p>
+        </article>
+        <article class="card">
+          <div class="circle">◉</div>
+          <h3>Simple to Prepare</h3>
+          <p>Roasting makhana with a modest amount of oil or ghee gives you crunch without needing deep frying.</p>
+        </article>
+        <article class="card">
+          <div class="circle">◇</div>
+          <h3>Better Snack Choice</h3>
+          <p>Its biggest advantage is practical: it can replace a snack habit that may be working against your goals.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="how">
+      <div>
+        <h2>How to Eat Makhana for Weight Loss</h2>
+        <ul class="tips">
+          <li>Roast with minimal oil or ghee.</li>
+          <li>Use spices like black pepper, cumin, or chaat masala for flavour.</li>
+          <li>Avoid excessive butter, sugar, or heavy coatings.</li>
+          <li>Serve a moderate portion in a bowl instead of eating mindlessly from the container.</li>
+        </ul>
+      </div>
+      <img src="images/healthy-roasted-makhana.webp" alt="Roasted makhana in a black pan">
+    </section>
+
+    <aside class="watch">
+      <div class="warning">⚠</div>
+      <div>
+        <h3>Watch Out</h3>
+        <p>Too much oil, cheese, or caramel can turn makhana into a much more energy-dense snack. Keep everyday versions
+          simple and lightly seasoned.</p>
+      </div>
+      <img src="images/makhana-small-scoop.webp" alt="Makhana with wooden scoop">
+    </aside>
+
+    <section class="bottom">
+      <div class="bottom-icon">🍃</div>
+      <div>
+        <h3>The Bottom Line</h3>
+        <p>Makhana won’t magically burn fat, but it can be a smart snack choice that supports a weight-management
+          routine. Use it as a thoughtful swap, keep portions sensible, stay active, and focus on consistency.</p>
+      </div>
+      <img src="images/makhana-bowl-illustration.webp" alt="Illustration of a bowl of makhana">
+    </section>
+
+   <p class="source"><strong>Health note:</strong> Makhana can be included as part of a balanced diet, but no single food automatically causes weight loss. Individual results depend on overall diet, portion sizes, physical activity and other lifestyle factors.</p>
+  </main>
+</body>
+
+</html>

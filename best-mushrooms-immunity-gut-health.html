@@ -1,0 +1,643 @@
+<!doctype html>
+<html lang="en">
+<link rel="icon" type="image/png" href="images/favicon.png">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Best Mushrooms for Immunity & Gut Health | Makshroom</title>
+    <meta name="description"
+        content="Discover the best mushrooms for immunity and gut health, including shiitake, oyster, maitake and button mushrooms, and learn how to include them in a balanced diet.">
+    <style>
+        :root {
+            --g: #174d33;
+            --leaf: #5e9858;
+            --ink: #182019;
+            --muted: #687169;
+            --soft: #f5f7f1;
+            --line: #e3e8df;
+            --peach: #fff7ef
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            color: var(--ink);
+            font: 16px/1.65 Arial, sans-serif;
+            background: #fff
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit
+        }
+
+        .wrap {
+            width: 100%;
+            padding: 0 clamp(28px, 6vw, 110px)
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: Georgia, "Times New Roman", serif
+        }
+
+        .hero {
+            background: linear-gradient(90deg, #fff 0 48%, #f8f6ef 48%)
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.12fr;
+            min-height: 570px
+        }
+
+        .hero-copy {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 38px 58px 50px 0
+        }
+
+        .tag {
+            width: max-content;
+            padding: 6px 13px;
+            border-radius: 20px;
+            background: #e7f2e4;
+            color: #4f8d4d;
+            font-size: 12px;
+            font-weight: 700
+        }
+
+        h1 {
+            font-size: clamp(48px, 4.2vw, 68px);
+            line-height: 1.05;
+            letter-spacing: -1.7px;
+            color: var(--g);
+            margin: 27px 0 20px
+        }
+
+        .lead {
+            font-size: 20px;
+            max-width: 610px;
+            margin: 0 0 32px
+        }
+
+        .byline {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 14px;
+            font-weight: 700
+        }
+
+        .avatar {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: #e8b16d;
+            display: grid;
+            place-items: center;
+            color: #fff
+        }
+
+        .hero-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            min-height: 570px
+        }
+
+        .article {
+            max-width: 1440px;
+            margin: auto
+        }
+
+        .intro {
+            max-width: 1000px;
+            padding: 48px 0 30px
+        }
+
+        .intro p {
+            font-size: 17px;
+            margin: 0 0 14px
+        }
+
+        .explainer {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
+            padding: 40px 0;
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line)
+        }
+
+        .explainer img {
+            width: 100%;
+            border-radius: 16px
+        }
+
+        .explainer h2,
+        .section-title,
+        .choice h2,
+        .eat h2,
+        .watch h2,
+        .bottom h2 {
+            color: var(--g);
+            font-size: 35px;
+            line-height: 1.2;
+            margin: 0 0 18px
+        }
+
+        .quote {
+            margin-top: 20px;
+            padding: 20px 24px;
+            border-left: 4px solid var(--leaf);
+            background: #f3f7ef;
+            border-radius: 0 12px 12px 0;
+            font-family: Georgia, serif;
+            font-size: 21px;
+            color: var(--g)
+        }
+
+        .mushrooms {
+            padding: 48px 0
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 34px
+        }
+
+        .feature {
+            display: grid;
+            grid-template-columns: 1fr 1.08fr;
+            gap: 46px;
+            align-items: center;
+            padding: 32px 0;
+            border-bottom: 1px solid var(--line)
+        }
+
+        .feature.rev .copy {
+            order: 2
+        }
+
+        .feature.rev img {
+            order: 1
+        }
+
+        .feature img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 16px
+        }
+
+        .num {
+            display: inline-grid;
+            place-items: center;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: #edf4e8;
+            color: var(--g);
+            font-weight: 700;
+            margin-bottom: 10px
+        }
+
+        .feature h3 {
+            color: var(--g);
+            font-size: 29px;
+            line-height: 1.2;
+            margin: 0 0 14px
+        }
+
+        .feature p {
+            margin: 0 0 12px
+        }
+
+        .feature ul {
+            columns: 2;
+            margin: 10px 0 15px;
+            padding-left: 20px
+        }
+
+        .note {
+            background: #f7f8f4;
+            border-radius: 10px;
+            padding: 12px 15px;
+            margin-top: 10px
+        }
+
+        .choice {
+            padding: 48px 0
+        }
+
+        .choice p {
+            margin: 0 0 13px
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0
+        }
+
+        .table th,
+        .table td {
+            padding: 15px 18px;
+            border-bottom: 1px solid var(--line);
+            text-align: left
+        }
+
+        .table th {
+            background: #edf4e8;
+            color: var(--g)
+        }
+
+        .eat {
+            background: #f6f8f3;
+            border: 1px solid #e0e7dc;
+            border-radius: 16px;
+            padding: 30px 34px;
+            margin-bottom: 28px
+        }
+
+        .eat p,
+        .watch p,
+        .bottom p {
+            margin: 0 0 12px
+        }
+
+        .watch {
+            background: var(--peach);
+            border: 1px solid #efd8c3;
+            border-radius: 16px;
+            padding: 30px 34px;
+            margin-bottom: 28px
+        }
+
+        .bottom {
+            display: grid;
+            grid-template-columns: 72px 1fr;
+            gap: 24px;
+            background: #f9fbf5;
+            border: 1px solid #dce5d6;
+            border-radius: 16px;
+            padding: 30px 34px;
+            margin-bottom: 42px
+        }
+
+        .icon {
+            width: 68px;
+            height: 68px;
+            border-radius: 50%;
+            background: var(--leaf);
+            color: #fff;
+            display: grid;
+            place-items: center;
+            font-size: 30px
+        }
+
+        .bottom strong {
+            color: var(--g)
+        }
+
+        .breadcrumb {
+            padding: 20px 0 10px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .breadcrumb a {
+            color: #176b4a;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .breadcrumb span {
+            margin: 0 4px;
+        }
+
+        @media(max-width:900px) {
+            .hero {
+                background: #fff
+            }
+
+            .hero-grid,
+            .explainer,
+            .feature {
+                grid-template-columns: 1fr
+            }
+
+            .hero-copy {
+                padding: 34px 0
+            }
+
+            .hero-img {
+                min-height: 360px
+            }
+
+            .feature.rev .copy,
+            .feature.rev img {
+                order: initial
+            }
+
+            .feature img {
+                height: 300px
+            }
+        }
+
+        @media(max-width:620px) {
+            .wrap {
+                padding: 0 18px
+            }
+
+            .back {
+                display: none
+            }
+
+            .top {
+                height: 62px;
+                font-size: 12px
+            }
+
+            h1 {
+                font-size: 40px
+            }
+
+            .lead {
+                font-size: 17px
+            }
+
+            .hero-img {
+                min-height: 270px
+            }
+
+            .explainer h2,
+            .section-title,
+            .choice h2 {
+                font-size: 29px
+            }
+
+            .feature {
+                gap: 22px
+            }
+
+            .feature img {
+                height: 230px
+            }
+
+            .bottom {
+                grid-template-columns: 1fr
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="hero">
+        <div class="wrap">
+            <nav class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>></span>
+                <a href="index.html#blog">Blog</a>
+                <span>></span>
+                <span>Best Mushrooms for Immunity &amp; Gut Health</span>
+            </nav>
+            <div class="hero-grid">
+                <div class="hero-copy"><span class="tag">◉ &nbsp; WELLNESS</span>
+                    <h1>Best Mushrooms for Immunity &amp; Gut Health</h1>
+                    <p class="lead">Shiitake, oyster, maitake or even the everyday button mushroom—which one deserves a
+                        place on your plate? Here’s what research suggests, without the exaggerated health claims.</p>
+                    <div class="byline"><span class="avatar">✦</span><span>By Makshroom
+                            Team</span><span>•</span><span>June 18, 2025</span></div>
+                </div><img class="hero-img" src="images/mushrooms-immunity-gut-health-hero.webp"
+                    alt="Variety of mushrooms for immunity and gut health"
+            </div>
+        </div>
+    </header>
+    <main class="wrap article">
+        <section class="intro">
+            <p>Mushrooms have an unusual reputation.</p>
+            <p>In the kitchen, they are simply vegetables—or more accurately, fungi—with a savoury flavour and meaty
+                texture. But in nutrition research, mushrooms are also studied for compounds such as β-glucans and other
+                polysaccharides, which may interact with immune pathways and the gut microbiome.</p>
+            <p>That does not mean eating one bowl of mushrooms will suddenly “boost” your immunity.</p>
+            <p><strong>The more useful question is: which mushrooms are interesting from an immune and gut-health
+                    perspective, and how can you realistically include them in your diet?</strong></p>
+        </section>
+        <section class="explainer">
+            <div>
+                <h2>First, How Are the Gut and Immune System Connected?</h2>
+                <p>The gut is more than a place where food is digested. It contains a large and complex community of
+                    microorganisms, collectively called the gut microbiota.</p>
+                <p>Diet can influence this microbial community. Researchers are particularly interested in carbohydrates
+                    that escape digestion in the upper gastrointestinal tract and can interact with or be fermented by
+                    gut microbes.</p>
+                <p>Mushroom cell walls contain compounds including chitin and glucans. Research reviews suggest that
+                    mushroom polysaccharides may influence gut microbial composition and fermentation products, but the
+                    effects vary by mushroom species, preparation, dose, and study design.</p>
+                <p>There is also growing research interest in β-glucans because of their interaction with immune
+                    pathways. However, β-glucans differ structurally depending on their source, and findings from a
+                    purified extract cannot automatically be applied to every mushroom or every serving of mushroom
+                    food.</p>
+                <div class="quote">Think of mushrooms as one useful part of a varied diet—not as an immunity shortcut.
+                </div>
+            </div><img src="images/gut-immunity-connection.webp" alt="Gut and immunity connection illustration">
+        </section>
+        <section class="mushrooms">
+            <h2 class="section-title">5 Mushrooms Worth Knowing</h2>
+            <article class="feature">
+                <div class="copy"><span class="num">1</span>
+                    <h3>Shiitake: The Most Interesting All-Rounder</h3>
+                    <p>Shiitake has a deep, savoury flavour and is one of the most widely discussed edible mushrooms in
+                        nutrition research.</p>
+                    <p>Like other mushrooms, shiitake contains polysaccharides, including glucans. Specific
+                        shiitake-derived compounds have been investigated for immune-modulating effects, although
+                        research involving isolated compounds or supplements should not be treated as proof that an
+                        ordinary shiitake meal will produce the same clinical effect.</p>
+                    <p>From a practical point of view, shiitake is easy to add to:</p>
+                    <ul>
+                        <li>soups,</li>
+                        <li>stir-fries,</li>
+                        <li>noodles,</li>
+                        <li>fried rice,</li>
+                        <li>broths.</li>
+                    </ul>
+                    <div class="note"><strong>Why it stands out:</strong> a combination of culinary versatility and
+                        significant research interest.<br><strong>Best for:</strong> people who want an everyday food
+                        rather than a supplement-focused approach.</div>
+                </div><img src="images/shiitake-mushroom-health.webp" alt="Fresh shiitake mushrooms">
+            </article>
+            <article class="feature rev">
+                <div class="copy"><span class="num">2</span>
+                    <h3>Oyster Mushroom: A Gut-Friendly Everyday Choice</h3>
+                    <p>Oyster mushrooms are affordable, widely available in many places, and easy to cook.</p>
+                    <p>Research has examined the nondigestible carbohydrates in oyster mushrooms, including chitin and
+                        glucans, for possible prebiotic interactions with gut microorganisms. Reviews describe promising
+                        findings, although more human clinical research is needed before making specific
+                        disease-prevention or treatment claims.</p>
+                    <p>Their soft texture also makes them easy to use in:</p>
+                    <ul>
+                        <li>mushroom stir-fries,</li>
+                        <li>curries,</li>
+                        <li>wraps,</li>
+                        <li>soups,</li>
+                        <li>grilled dishes.</li>
+                    </ul>
+                    <div class="note"><strong>Why it stands out:</strong> accessible, versatile, and interesting from a
+                        mushroom-fibre and gut-microbiota research perspective.<br><strong>Best for:</strong> regular
+                        home cooking.</div>
+                </div><img src="images/oyster-mushroom-gut-health.webp" alt="Fresh oyster mushrooms">
+            </article>
+            <article class="feature">
+                <div class="copy"><span class="num">3</span>
+                    <h3>Maitake: Interesting, but Don't Believe Every Claim</h3>
+                    <p>Maitake, also known as “hen of the woods,” has a layered, feathery appearance and is often
+                        discussed in the functional mushroom category.</p>
+                    <p>Maitake β-glucan preparations have been studied for immune effects. But there is an important
+                        distinction between eating maitake as food and consuming a concentrated extract used in a
+                        research study.</p>
+                    <p>Those two things are not automatically equivalent.</p>
+                    <p>That distinction matters because online articles often take research on concentrated mushroom
+                        compounds and turn it into much broader claims about the whole mushroom.</p>
+                    <div class="note"><strong>Why it stands out:</strong> one of the more researched mushrooms in the
+                        immune-modulation field.<br><strong>Best for:</strong> culinary variety and people curious about
+                        less common edible mushrooms.</div>
+                </div><img src="images/maitake-mushroom-health.webp" alt="Fresh maitake mushroom">
+            </article>
+            <article class="feature rev">
+                <div class="copy"><span class="num">4</span>
+                    <h3>Button Mushrooms: Don't Ignore the Everyday Option</h3>
+                    <p>Button mushrooms may not sound as exotic as shiitake or maitake, but that does not make them
+                        nutritionally irrelevant.</p>
+                    <p>Research has also investigated β-glucans from Agaricus bisporus, the species that includes white
+                        button and related common cultivated mushrooms. A 2024 laboratory study, for example,
+                        investigated how β-glucans in whole mushroom powder interacted with immune-cell processes after
+                        simulated digestion. This is interesting mechanistic evidence, not proof that eating button
+                        mushrooms prevents illness.</p>
+                    <p>Their biggest practical advantage is simple: they are easy to find and easy to use regularly.</p>
+                    <p>Add them to:</p>
+                    <ul>
+                        <li>omelettes,</li>
+                        <li>sandwiches,</li>
+                        <li>pasta,</li>
+                        <li>curries,</li>
+                        <li>soups,</li>
+                        <li>stir-fries.</li>
+                    </ul>
+                    <div class="note"><strong>Why it stands out:</strong> affordability and
+                        accessibility.<br><strong>Best for:</strong> making mushrooms a regular part of meals.</div>
+                </div><img src="images/button-mushroom-everyday-health.webp" alt="Fresh button mushrooms">
+            </article>
+            <article class="feature">
+                <div class="copy"><span class="num">5</span>
+                    <h3>UV-Exposed Mushrooms: The Vitamin D Angle</h3>
+                    <p>This is slightly different from choosing a particular mushroom species.</p>
+                    <p>Mushrooms can contain vitamin D2, and their vitamin D content can increase substantially when
+                        they are exposed to ultraviolet light. However, vitamin D levels vary widely depending on
+                        species and UV exposure, so not every pack of mushrooms is automatically a rich vitamin D
+                        source.</p>
+                    <p>Vitamin D is involved in normal immune function, but the broader evidence on nutrition and
+                        immunity supports adequate overall nutrition rather than relying on a single “immune-boosting”
+                        food.</p>
+                    <p>If vitamin D is your reason for buying mushrooms, check whether the package specifically mentions
+                        UV exposure or vitamin D content.</p>
+                    <div class="note"><strong>Why it stands out:</strong> potentially useful dietary vitamin D2,
+                        depending on how the mushrooms were grown or treated.</div>
+                </div><img src="images/uv-exposed-mushrooms-vitamin-d.webp" alt="Mushrooms in natural sunlight">
+            </article>
+        </section>
+        <section class="choice">
+            <h2>So, Which Mushroom Is Best?</h2>
+            <p>Scientifically there is no single best mushroom for every goal. 
+               The most practical choice depends on what you value, such as availability, flavour, variety, or the type of nutrition research you're interested in.</p>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Your Priority</th>
+                        <th>Practical Choice</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Everyday availability</td>
+                        <td>Button mushroom</td>
+                    </tr>
+                    <tr>
+                        <td>Gut-health research interest</td>
+                        <td>Oyster mushroom</td>
+                    </tr>
+                    <tr>
+                        <td>Strong savoury flavour + research interest</td>
+                        <td>Shiitake</td>
+                    </tr>
+                    <tr>
+                        <td>Functional-mushroom research interest</td>
+                        <td>Maitake</td>
+                    </tr>
+                    <tr>
+                        <td>Dietary vitamin D2</td>
+                        <td>UV-exposed mushrooms</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>The larger lesson is that variety is more useful than searching for one magical mushroom.
+                Different mushroom species have different compositions, and research findings cannot always be
+                transferred from one species—or one purified extract—to another.
+            </p>
+            
+        </section>
+        <section class="eat">
+            <h2>How to Eat More Mushrooms Without Making It Complicated</h2>
+            <p>You do not need mushroom powders, complicated drinks, or an expensive supplement routine to include
+                mushrooms in your diet.</p>
+            <p><strong>Start with food.</strong></p>
+            <p>Add oyster mushrooms to a stir-fry, shiitake to soup or noodles, and button mushrooms to breakfast,
+                pasta, or curry. Rotate varieties when they are available and affordable.</p>
+            <p>The way the complete meal is prepared also matters. A mushroom dish cooked with vegetables, legumes,
+                whole grains, or another protein source is nutritionally different from deep-fried mushrooms covered in
+                batter and sauce.</p>
+            <p><strong>The mushroom matters, but the whole meal matters too.</strong></p>
+        </section>
+        <section class="watch">
+            <h2>Watch Out for the Word “Boost”.</h2>
+            <p>The phrase “boosts immunity” appears frequently in food marketing, but the immune system is complex.</p>
+            <p>Adequate nutrition is important for normal immune function, and nutrients such as vitamin D, zinc,
+                selenium, iron, vitamin C, and protein all play roles in immune-cell growth and function. No single food
+                creates a complete immune system on its own.</p>
+            <p>Research into mushroom β-glucans is scientifically interesting, but evidence from cells, animals,
+                concentrated extracts, or specific clinical preparations should not be converted into promises that an
+                ordinary mushroom dish will prevent or cure disease.</p>
+        </section>
+        <section class="bottom">
+            <div class="icon">✦</div>
+            <div>
+                <h2>The Bottom Line</h2>
+                <p>Mushrooms are worth eating, but not because they are magic.</p>
+                <p><strong>Shiitake and maitake are interesting for their history of research on mushroom
+                        polysaccharides. Oyster mushrooms are a practical choice with interesting research around
+                        nondigestible carbohydrates and the gut microbiota. Button mushrooms are affordable, accessible,
+                        and should not be dismissed simply because they are common. UV-exposed mushrooms can offer a
+                        different advantage through higher vitamin D2 content.</strong></p>
+                <p>The smartest approach is not to search for one mushroom that promises to “boost” immunity.</p>
+                <p><strong>Eat a varied diet, include different mushroom varieties when practical, and enjoy them for
+                        what the evidence can reasonably support: nutritious foods containing fibre-like carbohydrates
+                        and bioactive compounds that continue to be studied for their relationship with gut and immune
+                        health.</strong></p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

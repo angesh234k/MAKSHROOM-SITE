@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Korean Mushroom Stir-Fry Recipe | Makshroom</title>
+    <meta name="description" content="Learn how to make Korean mushroom stir-fry with button, oyster and shiitake mushrooms, vegetables and a savory Korean-style sauce. An easy, flavorful mushroom recipe.">
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            color: #182019;
+            font: 16px/1.65 Arial, sans-serif
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: Georgia, serif
+        }
+
+        .wrap {
+            width: 100%;
+            padding: 0 clamp(28px, 6vw, 110px)
+        }
+
+        .hero {
+            background: linear-gradient(90deg, #fff 0 48%, #f8f6ef 48%)
+        }
+
+        .top {
+            height: 76px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #687169;
+            font-size: 14px
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.12fr;
+            min-height: 570px
+        }
+
+        .copy {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-right: 58px
+        }
+
+        .tag {
+            width: max-content;
+            padding: 6px 13px;
+            border-radius: 20px;
+            background: #e7f2e4;
+            color: #4f8d4d;
+            font-size: 12px;
+            font-weight: 700
+        }
+
+        h1 {
+            font-size: clamp(48px, 4.2vw, 68px);
+            line-height: 1.05;
+            color: #174d33;
+            margin: 27px 0 20px
+        }
+
+        .lead {
+            font-size: 20px
+        }
+
+        .hero img {
+            width: 100%;
+            height: 100%;
+            min-height: 570px;
+            object-fit: cover
+        }
+
+        .article {
+            max-width: 1440px;
+            margin: auto;
+            padding-top: 45px;
+            padding-bottom: 45px
+        }
+
+        .article h2 {
+            font-size: 35px;
+            color: #174d33;
+            margin: 42px 0 18px;
+            border-top: 1px solid #e3e8df;
+            padding-top: 35px
+        }
+
+        .article h2:first-child {
+            border: 0;
+            padding-top: 0
+        }
+
+        .article h3 {
+            font-size: 27px;
+            color: #174d33;
+            margin: 30px 0 14px
+        }
+
+        .article p {
+            max-width: 980px;
+            margin: 0 0 13px
+        }
+
+        .visual {
+            margin: 22px 0 30px
+        }
+
+        .visual img {
+            width: 100%;
+            max-height: 700px;
+            object-fit: contain;
+            border-radius: 16px;
+            background: #faf9f4
+        }
+
+        .steps-visual {
+            width: 60%;
+            max-width: 700px;
+            margin: 35px auto 45px
+        }
+
+        .steps-visual img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 16px
+        }
+
+        .stat {
+            display: inline-flex;
+            flex-direction: column;
+            background: #f5f7f1;
+            border: 1px solid #e0e7dc;
+            border-radius: 11px;
+            padding: 12px 18px;
+            margin: 6px 8px 6px 0
+        }
+
+        .stat span {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #687169
+        }
+
+        .stat strong {
+            color: #174d33
+        }
+
+        .article li {
+            margin: 8px 0;
+            max-width: 900px
+        }
+
+        .article h2:last-of-type {
+            background: #f9fbf5;
+            border: 1px solid #dce5d6;
+            border-radius: 16px;
+            padding: 28px 30px;
+            margin-top: 35px
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            padding: 20px 0 10px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .breadcrumb a {
+            color: #176b4a;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .breadcrumb span {
+            margin: 0 4px;
+        }
+
+        @media(max-width:900px) {
+            .hero {
+                background: #fff
+            }
+
+            .hero-grid {
+                grid-template-columns: 1fr
+            }
+
+            .copy {
+                padding: 35px 0
+            }
+
+            .hero img {
+                min-height: 350px
+            }
+
+            .steps-visual {
+                width: 100%;
+                margin: 30px auto
+            }
+
+            .article p {
+                max-width: none
+            }
+        }
+
+        @media(max-width:620px) {
+            .wrap {
+                padding-left: 18px;
+                padding-right: 18px
+            }
+
+            .top {
+                height: 62px;
+                font-size: 12px
+            }
+
+            .top a {
+                display: none
+            }
+
+            h1 {
+                font-size: 40px
+            }
+
+            .lead {
+                font-size: 17px
+            }
+
+            .hero img {
+                min-height: 270px
+            }
+
+            .article h2 {
+                font-size: 29px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="hero">
+        <div class="wrap">
+            <nav class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>></span>
+                <a href="index.html#recipes">Blog</a>
+                <span>></span>
+                <span>Korean Mushroom Stir-Fry Recipe</span>
+            </nav>
+            <div class="hero-grid">
+                <div class="copy"><span class="tag">◉ &nbsp; RECIPE</span>
+                    <h1>Korean Mushroom Stir-Fry Recipe</h1>
+                    <p class="lead">Savory, slightly sweet, garlicky, and full of umami—this Korean-inspired mushroom
+                        stir-fry is an easy way to turn simple mushrooms into a flavorful meal. Serve it with steamed
+                        rice, noodles, or as part of a larger Korean-style meal.</p>
+                    <p><strong>By Makshroom Team</strong> &nbsp; • &nbsp; Easy Recipe</p>
+                </div><img src="images/korean-mushroom-stir-fry-hero.webp" alt="Completed Korean mushroom stir-fry">
+            </div>
+        </div>
+    </header>
+    <main class="wrap article">
+        <h2>About This Korean Mushroom Stir-Fry</h2>
+        <p>Mushrooms are especially good at absorbing strong flavours, which makes them perfect for a quick stir-fry.
+        </p>
+        <p>In this recipe, a mixture of mushrooms is cooked over fairly high heat and coated in a simple sauce made with
+            soy sauce, garlic, sesame oil, gochujang, and a little sweetness for balance. The result is a dish that is
+            savoury, mildly spicy, and rich in umami.</p>
+        <p>The best part is the contrast in texture. Button mushrooms stay juicy, oyster mushrooms become tender around
+            the edges, and shiitake mushrooms bring a deeper savoury flavour.</p>
+        <p>You don&#x27;t need all three varieties to make the recipe. Use whichever fresh mushrooms are easily
+            available to you, or combine two varieties for more texture.</p>
+        <div class="stat"><span>Prep time</span><strong>15 minutes
+                Cook time: 15 minutes
+                Total time: 30 minutes
+                Servings: 2–3
+                Difficulty: Easy</strong></div>
+        <h2>Ingredients</h2>
+        <div class="visual"><img src="images/korean-mushroom-stir-fry-ingredients.webp" alt="Main stir-fry ingredients">
+        </div>
+        <h3>For the Stir-Fry</h3>
+        <li>200 g button mushrooms — cleaned and sliced</li>
+        <li>150 g oyster mushrooms — gently separated into smaller pieces</li>
+        <li>100 g fresh shiitake mushrooms — stems removed and caps sliced</li>
+        <li>1 small onion — thinly sliced</li>
+        <li>½ red bell pepper — thinly sliced</li>
+        <li>½ green bell pepper — thinly sliced</li>
+        <li>2 spring onions — sliced, with white and green parts separated</li>
+        <li>1 tablespoon neutral cooking oil</li>
+        <li>1 teaspoon toasted sesame seeds — for finishing</li>
+        <h3>Mushroom note</h3>
+        <p>You can use approximately 400–450 g of any mushroom combination if all three varieties are not available.
+            Button and oyster mushrooms alone also work well.</p>
+        <h3>For the Korean-Style Sauce</h3>
+        <div class="visual"><img src="images/korean-stir-fry-sauce-ingredients.webp"
+                alt="Korean-style sauce ingredients"></div>
+        <li>2 tablespoons soy sauce</li>
+        <li>1 tablespoon gochujang (Korean fermented chilli paste)</li>
+        <li>1 teaspoon toasted sesame oil</li>
+        <li>2 cloves garlic — finely minced or grated</li>
+        <li>1 teaspoon fresh ginger — finely grated</li>
+        <li>1 teaspoon rice vinegar</li>
+        <li>1–2 teaspoons honey or brown sugar, depending on your preferred sweetness</li>
+        <li>2 tablespoons water</li>
+        <p>Add all the sauce ingredients to a small bowl and mix until the gochujang is completely incorporated.</p>
+        <p>Taste before adding extra salt. Soy sauce and gochujang already contribute significant saltiness to the dish.
+        </p>
+        <h2>Step-by-Step Recipe</h2>
+
+        <h3>Step 1: Prepare the Mushrooms</h3>
+        <p>Clean the mushrooms carefully.</p>
+        <p>Instead of soaking them in water, wipe away visible dirt with a slightly damp kitchen towel or clean them
+            quickly and dry them thoroughly. Excess surface moisture can make it harder for the mushrooms to brown
+            properly.</p>
+        <p>Slice the button and shiitake mushrooms. Tear large oyster mushroom clusters gently into smaller pieces.</p>
+        <p>Try not to cut everything into exactly the same shape. Different shapes and sizes create a more interesting
+            final texture.</p>
+        <h3>Step 2: Make the Sauce</h3>
+        <p>In a small bowl, combine:</p>
+        <p>soy sauce, gochujang, sesame oil, garlic, ginger, rice vinegar, honey or brown sugar, and water.</p>
+        <p>Mix well until you have a smooth reddish-brown sauce.</p>
+        <p>Taste a very small amount and adjust according to preference. Add a little more gochujang for heat or a small
+            amount of sweetness if the sauce tastes too sharp.</p>
+        <p>Keep the sauce ready beside the stove. Once stir-frying begins, the cooking process moves quickly.</p>
+        <h3>Step 3: Brown the Mushrooms</h3>
+        <p>Heat a large frying pan or wok over medium-high to high heat.</p>
+        <p>Add the neutral cooking oil, followed by the mushrooms. If your pan is small, cook the mushrooms in two
+            batches rather than crowding them.</p>
+        <p>Spread them across the pan and allow them to cook briefly before stirring.</p>
+        <p>Continue cooking until the mushrooms release some moisture, the liquid begins to evaporate, and the edges
+            develop light golden-brown colour.</p>
+        <p>This step builds much of the flavour of the finished dish, so don&#x27;t rush it.</p>
+        <h3>Step 4: Add the Vegetables</h3>
+        <p>Add the sliced onion and the white parts of the spring onions.</p>
+        <p>Stir-fry for about 1–2 minutes, then add the red and green bell peppers.</p>
+        <p>Continue cooking briefly. The vegetables should soften slightly but still retain some colour and texture.</p>
+        <p>The goal is a lively stir-fry, not vegetables cooked until completely soft.</p>
+        <h3>Step 5: Add the Korean-Style Sauce</h3>
+        <p>Reduce the heat slightly and pour the prepared sauce into the pan.</p>
+        <p>Toss everything together so that the mushrooms and vegetables are evenly coated.</p>
+        <p>Cook for another 1–2 minutes, stirring frequently, until the sauce becomes glossy and lightly coats the
+            mushrooms.</p>
+        <p>Avoid cooking for too long after adding the sauce. Over-reducing can make a soy-based sauce excessively
+            salty.</p>
+        <h3>Step 6: Finish and Serve</h3>
+        <p>Turn off the heat.</p>
+        <p>Add most of the green parts of the spring onions and toss once more.</p>
+        <p>Transfer the mushroom stir-fry to a serving bowl and finish with:</p>
+        <li>remaining spring onion greens,</li>
+        <li>toasted sesame seeds,</li>
+        <li>and, if you like extra heat, a few thin slices of fresh chilli.</li>
+        <p>Serve immediately while the mushrooms are hot and glossy.</p>
+        <div class="steps-visual"><img src="images/korean-mushroom-stir-fry-steps.webp"
+                alt="Six-step Korean mushroom stir-fry collage"></div>
+        <h2>What to Serve It With</h2>
+        <p>This Korean mushroom stir-fry works well with steamed short-grain rice or jasmine rice for a simple meal.</p>
+        <p>You can also serve it with noodles, use it as a filling for lettuce wraps, add it to a rice bowl with
+            cucumber and other vegetables, or serve a smaller portion as part of a larger Korean-inspired meal.</p>
+        <p>For a more substantial meal, pair it with tofu or another protein source rather than relying on mushrooms
+            alone as a high-protein ingredient.</p>
+        <h2>Tips for Better Mushroom Stir-Fry</h2>
+        <p>The difference between a good mushroom stir-fry and a watery one often comes down to a few simple details:
+        </p>
+        <li>Use a wide pan. Mushrooms brown better when they have enough surface contact.</li>
+        <li>Don&#x27;t overcrowd the pan. Cook in batches if necessary.</li>
+        <li>Keep the heat reasonably high. This helps moisture evaporate.</li>
+        <li>Prepare the sauce before cooking. Stir-frying moves quickly.</li>
+        <li>Add sesame oil mainly for flavour. The neutral oil handles the higher-heat cooking.</li>
+        <li>Serve immediately. The texture is best while the mushrooms are freshly cooked.</li>
+        <h2>The Bottom Line</h2>
+        <p>A good Korean-style mushroom stir-fry doesn&#x27;t need a long ingredient list or complicated cooking
+            technique.</p>
+        <p>The key is to brown the mushrooms properly, keep some texture in the vegetables, and add the sauce near the
+            end so it coats the ingredients without becoming too salty or heavy.</p>
+        <p>With a bowl of rice, it makes a quick, flavourful meal—and using a mixture of mushrooms makes every bite a
+            little different.</p>
+    </main>
+</body>
+
+</html>

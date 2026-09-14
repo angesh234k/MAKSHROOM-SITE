@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Global Healthy Recipes | Mushroom & Makhana Recipes | Makshroom</title>
+<meta name="description" content="Explore healthy global recipes featuring mushrooms and makhana, from comforting soups and curries to flavorful rice, pasta and snack ideas. Discover easy and delicious recipes with Makshroom.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<style>
+body{background:#fafaf8;margin:0;font-family:Arial,sans-serif}
+.hero{
+    background:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url("images/hero-food.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding:120px 20px;
+    text-align:center;
+}
+.hero h1{
+    font-family: var(--font-serif);
+    font-size:58px;
+    font-weight:700;
+    color:#fff;
+    margin:0;
+}
+.hero p{
+    color:#fff;
+    font-size:18px;
+}
+.container{max-width:1200px;margin:auto;padding:35px 20px}
+.breadcrumb{margin-bottom:20px}
+.breadcrumb a{color:#2e7d32;text-decoration:none;font-weight:bold}
+.search{width:100%;padding:14px;border:1px solid #ddd;border-radius:8px;margin:20px 0}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:30px}
+.filters span{background:#eef7ee;padding:9px 16px;border-radius:999px}
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(290px,290px));
+    justify-content:center;
+    gap:28px;
+}
+.newsletter{margin:70px auto 0;background:#f2f2ef;border-radius:22px;padding:55px 25px;text-align:center}
+.newsletter h2{font-size:28px;margin:0}
+.newsletter p{margin:6px 0 20px}
+.newsletter input{width:min(560px,100%);padding:16px;border:1px solid #ccc;border-radius:10px;font-size:16px}
+.subscribe{display:inline-block;margin-top:22px;background:#2e7d32;color:#fff;text-decoration:none;padding:14px 22px;border-radius:10px}
+footer{margin-top:60px;background:#111;color:#fff;text-align:center;padding:28px}
+</style>
+</head>
+<body id="top">
+
+<section class="hero">
+<h1><strong>Global Recipes to Try</strong></h1>
+<p>Explore healthy, delicious recipes from around the world.</p>
+</section>
+
+<div class="container">
+
+<div class="breadcrumb"><a href="index.html">Home</a>
+&gt;
+<a href="index.html#recipes">Global Recipes</a>
+</div>
+
+<input
+    type="text"
+    id="recipeSearch"
+    class="search"
+    placeholder="🔍 Search recipes..."
+>
+
+<div class="filters">
+<span>🍄 Mushroom</span>
+<span>🌰 Makhana</span>
+<span>🥗 Healthy</span>
+<span>🌍 Global</span>
+<span>⏱ Under 30 Min</span>
+</div>
+
+<div class="grid">
+
+  <!-- Korea -->
+        <a href="korean-mushroom-soup.html" class="card recipe-card">
+          <div class="card-img-wrap">
+            <img src="images/korean-step5.webp" alt="Korean Mushroom Soup" class="card-img" />
+            <span class="country-tag" style="background:#2d6a4f;">KOREA</span>
+            <button class="heart-btn" aria-label="Like">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="#888" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Korean Mushroom Soup</h4>
+            <div class="card-meta">
+              <span class="meta-item">
+                <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>20 mins
+              </span>
+              <span class="meta-item">
+                <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 7.08L12 16 8.47 12.47A4.07 4.07 0 0 1 6 13.87z"/><polyline points="15 9 13 11 11 9"/><line x1="9.96" y1="11.38" x2="8" y2="17"/><line x1="15.04" y1="11.38" x2="17" y2="17"/><line x1="7" y1="17" x2="17" y2="17"/></svg>Easy
+              </span>
+              <span class="meta-item meta-green">
+                <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>Healthy
+              </span>
+            </div>
+            <p class="card-desc">A warm and comforting soup packed with umami and nutrition.</p>
+          </div>
+        </a>
+
+        <!-- Italy -->
+        <a href="mushroom-aglio-olio.html" class="card recipe-card">
+          <div class="card-img-wrap">
+            <img src="images/pasta-main.webp" alt="Mushroom Pasta Aglio e Olio" class="card-img" />
+            <span class="country-tag" style="background:#1d6354;">ITALY</span>
+            <button class="heart-btn" aria-label="Like">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="#888" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Mushroom Pasta Aglio e Olio</h4>
+            <div class="card-meta">
+              <span class="meta-item"><svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>25 mins</span>
+              <span class="meta-item"><svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 7.08L12 16 8.47 12.47A4.07 4.07 0 0 1 6 13.87z"/><polyline points="15 9 13 11 11 9"/><line x1="9.96" y1="11.38" x2="8" y2="17"/><line x1="15.04" y1="11.38" x2="17" y2="17"/><line x1="7" y1="17" x2="17" y2="17"/></svg>Easy</span>
+              <span class="meta-item meta-green"><svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>Healthy</span>
+            </div>
+            <p class="card-desc">A light, flavorful pasta with mushrooms &amp; herbs.</p>
+          </div>
+        </a>
+
+        <!-- Japan -->
+        <a href="japanese-mushroom-rice.html" class="card recipe-card">
+          <div class="card-img-wrap">
+            <img src="images/japan-main.webp" alt="Japanese Mushroom Rice Bowl" class="card-img" />
+            <span class="country-tag" style="background:#2d6a4f;">JAPAN</span>
+            <button class="heart-btn" aria-label="Like">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="#888" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Japanese Mushroom Rice Bowl</h4>
+            <div class="card-meta">
+              <span class="meta-item"><svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>35 mins</span>
+              <span class="meta-item"><svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 7.08L12 16 8.47 12.47A4.07 4.07 0 0 1 6 13.87z"/><polyline points="15 9 13 11 11 9"/><line x1="9.96" y1="11.38" x2="8" y2="17"/><line x1="15.04" y1="11.38" x2="17" y2="17"/><line x1="7" y1="17" x2="17" y2="17"/></svg>Easy</span>
+              <span class="meta-item meta-green"><svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>Healthy</span>
+            </div>
+            <p class="card-desc">Simple, wholesome &amp; full of flavor. A perfect meal!</p>
+          </div>
+          </a>
+
+        <!-- Thailand -->
+        <a href="thai-mushroom-curry.html" class="card recipe-card">
+          <div class="card-img-wrap">
+            <img src="images/thai-main.webp" alt="Thai Mushroom Curry" class="card-img" />
+            <span class="country-tag" style="background:#a0522d;">THAILAND</span>
+            <button class="heart-btn" aria-label="Like">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="#888" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Thai Mushroom Curry</h4>
+            <div class="card-meta">
+              <span class="meta-item"><svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>35 mins</span>
+              <span class="meta-item"><svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 7.08L12 16 8.47 12.47A4.07 4.07 0 0 1 6 13.87z"/><polyline points="15 9 13 11 11 9"/><line x1="9.96" y1="11.38" x2="8" y2="17"/><line x1="15.04" y1="11.38" x2="17" y2="17"/><line x1="7" y1="17" x2="17" y2="17"/></svg>Medium</span>
+              <span class="meta-item meta-green"><svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>Healthy</span>
+            </div>
+            <p class="card-desc">A creamy and aromatic curry that's light yet satisfying.</p>
+          </div>
+        </a>
+
+        <!-- Mexico -->
+        <a href="mushroom-tacos.html" class="card recipe-card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400&h=280&fit=crop" alt="Mushroom Tacos with Avocado" class="card-img" />
+            <span class="country-tag" style="background:#6b4c11;">MEXICO</span>
+            <button class="heart-btn" aria-label="Like">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="#888" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Mushroom Tacos with Avocado</h4>
+            <div class="card-meta">
+              <span class="meta-item"><svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>30 mins</span>
+              <span class="meta-item"><svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 7.08L12 16 8.47 12.47A4.07 4.07 0 0 1 6 13.87z"/><polyline points="15 9 13 11 11 9"/><line x1="9.96" y1="11.38" x2="8" y2="17"/><line x1="15.04" y1="11.38" x2="17" y2="17"/><line x1="7" y1="17" x2="17" y2="17"/></svg>Easy</span>
+              <span class="meta-item meta-green"><svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>Healthy</span>
+            </div>
+            <p class="card-desc">A healthy twist to classic tacos loaded with greens!</p>
+          </div>
+        </a>
+
+</div>
+
+
+
+</div>
+
+<footer>
+&copy; Makshroom
+</footer>
+
+<script>
+
+const searchBox = document.getElementById("recipeSearch");
+const recipeCards = document.querySelectorAll(".recipe-card");
+
+searchBox.addEventListener("keyup", function () {
+
+    const searchText = this.value.toLowerCase();
+
+    recipeCards.forEach(card => {
+
+        const text = card.innerText.toLowerCase();
+
+        if (text.includes(searchText)) {
+            card.style.display = "";
+        } else {
+            card.style.display = "none";
+        }
+
+    });
+
+});
+
+</script>
+</body>
+</html>
