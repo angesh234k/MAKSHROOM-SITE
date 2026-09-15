@@ -61,10 +61,13 @@
             display: block;
         }
 
-        .hero-copy {
-            padding: 28px 44px 32px;
-            text-align: center
-        }
+    .hero-copy {
+    padding: 28px 44px 32px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
         .tag {
             display: inline-block;
@@ -287,12 +290,15 @@
         <nav class="breadcrumb">
             <a href="index.html">← Home</a>
         </nav>
-        <header class="hero"><img src="images/healthy-makhana-salad-main.webp" alt="Healthy makhana salad with roasted makhana and fresh vegetables"
-            <div class="hero-copy"><span class="tag">HEALTHY SNACK IDEA</span>
-                <h1>Healthy Makhana Salad</h1>
-                <p class="sub">Fresh, crunchy, colorful, and full of flavour</p>
-            </div>
-        </header>
+        <header class="hero">
+    <img src="images/healthy-makhana-salad-main.webp"
+         alt="Healthy makhana salad with roasted makhana and fresh vegetables">
+
+    <div class="hero-copy">
+        <span class="tag">HEALTHY SNACK IDEA</span>
+        <h1>Healthy Makhana Salad</h1>
+    </div>
+</header>
         <article class="content">
             <p>Looking for a snack that is fresh and crunchy at the same time? This Healthy Makhana Salad brings
                 together roasted makhana, peanuts, and chana with crisp cucumber, juicy tomato, onion, fresh coriander,
