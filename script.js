@@ -116,57 +116,76 @@ if (togglePopular) {
 }
 // Newsletter Subscription
 
+// Newsletter Subscription
+
 const emailInput = document.getElementById("newsletterEmail");
 const subscribeBtn = document.getElementById("newsletterSubscribeBtn");
 const message = document.getElementById("newsletterMessage");
 
-subscribeBtn.addEventListener("click", async function () {
-  if (emailInput.value.trim() === "") {
+if (emailInput && subscribeBtn && message) {
 
-    message.textContent = "🔴 Please enter your email.";
-    message.className = "error";
+    subscribeBtn.addEventListener("click", async function () {
 
-    return;
+        const email = emailInput.value.trim();
 
-}
-const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (email === "") {
+            message.textContent = "🔴 Please enter your email.";
+            message.className = "error";
+            return;
+        }
 
-if (!emailPattern.test(emailInput.value.trim())) {
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    message.textContent = "🔴 Please enter a valid email address.";
-    message.className = "error";
+        if (!emailPattern.test(email)) {
+            message.textContent = "🔴 Please enter a valid email address.";
+            message.className = "error";
+            emailInput.value = "";
+            return;
+        }
 
-    emailInput.value = "";
+        try {
 
-    return;
+            const response = await fetch(
+                "https://makshroom-backend.onrender.com/subscribe",
+                {
+                    method: "POST",
 
-}
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
 
-    const response = await fetch("http://localhost:5000/subscribe", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-            email: emailInput.value
-        })
+                    body: JSON.stringify({
+                        email: email
+                    })
+                }
+            );
+
+            const result = await response.text();
+
+            if (response.ok) {
+
+                message.textContent = "🟢 Thanks! You're subscribed.";
+                message.className = "success";
+                emailInput.value = "";
+
+            } else {
+
+                message.textContent = "🔴 " + result;
+                message.className = "error";
+                emailInput.value = "";
+
+            }
+
+        } catch (error) {
+
+            console.error("Subscription error:", error);
+
+            message.textContent =
+                "🔴 Unable to subscribe right now. Please try again.";
+
+            message.className = "error";
+        }
+
     });
 
-    const result = await response.text();
-
-    if (response.ok) {
-
-        message.textContent = "🟢 Thanks! You're subscribed.";
-        message.className = "success";
-
-        emailInput.value = "";
-
-    } else {
-
-    message.textContent = "🔴 " + result;
-    message.className = "error";
-
-    emailInput.value = "";
-
 }
-});
