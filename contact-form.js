@@ -32,7 +32,7 @@ form.addEventListener("submit", async (event) => {
 
     try {
 
-        const response = await fetch("http://localhost:5000/feedback", {
+        const response = await fetch("https://makshroom-backend.onrender.com/feedback", {
 
             method: "POST",
 
