@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://makshroomblog.netlify.app/sitemap.xml
